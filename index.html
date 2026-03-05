@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,221 +9,233 @@
 <style>
 
 body{
-background-color:#0c1b18;
-color:white;
-font-family:Georgia, serif;
 margin:0;
+font-family: Georgia, serif;
+background:#0c0c0c;
+color:white;
 text-align:center;
 }
 
-/* Header */
+/* HEADER */
 
 header{
-padding:40px 20px;
+padding:40px;
+background:#111;
+}
+
+header h1{
+font-size:48px;
+letter-spacing:3px;
+color:#e7c6ff;
+}
+
+header p{
+font-size:20px;
+color:#ccc;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 20px;
+}
+
+.hero h2{
 font-size:36px;
-letter-spacing:2px;
+color:#e7c6ff;
 }
 
-/* Meet Your Reader Section */
+/* MEET YOUR READER SECTION */
 
-.reader{
+.reader-section{
+position:relative;
+padding:120px 20px;
+margin-top:40px;
 
-background-image:url("5037782.jpg");
-background-size:cover;
-background-position:center;
+background-image:url("mandala.png");
+background-size:500px;
+background-repeat:no-repeat;
+background-position:center top;
+}
 
-max-width:650px;
-margin:40px auto;
+.reader-section h2{
+font-size:34px;
+margin-bottom:40px;
+}
 
-padding-top:20px;
-padding-bottom:15px;
-padding-left:20px;
-padding-right:20px;
+/* PHOTO */
 
-border-radius:30px;
-
+.reader-photo{
+width:260px;
+border-radius:50%;
 box-shadow:
-0 0 25px rgba(0,255,200,.25),
-0 0 60px rgba(0,255,200,.15);
-
+0 0 25px rgba(231,198,255,.8),
+0 0 60px rgba(231,198,255,.5);
 }
 
-/* Reader Image */
+/* TEXT */
 
-.reader img{
-
-width:320px;
-max-width:95%;
-
-display:block;
+.reader-text{
+max-width:700px;
 margin:auto;
-
-/* magical aura glow */
-
-filter:
-drop-shadow(0 0 15px rgba(255,255,255,0.9))
-drop-shadow(0 0 35px rgba(0,255,200,0.8))
-drop-shadow(0 0 60px rgba(0,255,200,0.6))
-drop-shadow(0 0 100px rgba(0,255,200,0.4));
-
-}
-
-/* Reader Text */
-
-.reader h2{
-
-font-size:28px;
-margin-top:15px;
-
-}
-
-.reader p{
-
+margin-top:30px;
 font-size:18px;
-line-height:1.6;
-
+line-height:1.7;
+color:#ddd;
 }
 
-/* Services Section */
+/* SERVICES */
 
 .services{
+padding:80px 20px;
+}
 
-max-width:700px;
-margin:60px auto;
-
+.services h2{
+font-size:32px;
+color:#e7c6ff;
+margin-bottom:30px;
 }
 
 .service-card{
-
-background:#142420;
-padding:20px;
-margin:20px;
-
-border-radius:20px;
-
-box-shadow:
-0 0 20px rgba(0,255,200,.15);
-
+background:#1a1a1a;
+padding:30px;
+margin:15px auto;
+max-width:400px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.6);
 }
 
-button{
-
-background:#00e6c3;
-border:none;
-
-padding:12px 25px;
-
-border-radius:25px;
-
-font-size:16px;
-
-cursor:pointer;
-
+.service-card h3{
+margin-top:0;
+color:#e7c6ff;
 }
 
-button:hover{
+/* PAYMENT */
 
-background:#00bfa5;
-
+.payment{
+padding:80px 20px;
+background:#111;
 }
 
-/* Footer */
+.payment h2{
+color:#e7c6ff;
+}
+
+/* FOOTER */
 
 footer{
-
-margin-top:60px;
-padding:30px;
-
+padding:40px;
 font-size:14px;
-
-opacity:.7;
-
+color:#aaa;
 }
 
 </style>
-
 </head>
+
 
 <body>
 
 <header>
 
-✨ Tarot by Tichele ✨
+<h1>Tarot by Tichele</h1>
+
+<p>Insight • Guidance • Spiritual Clarity</p>
 
 </header>
 
-<section class="reader">
+
+<section class="hero">
+
+<h2>Welcome</h2>
+
+<p>
+Tarot readings designed to bring clarity, empowerment,
+and spiritual insight into your life journey.
+</p>
+
+</section>
+
+
+
+<section class="reader-section">
 
 <h2>Meet Your Reader</h2>
 
-<img src="Polish_20251119_142404634.png">
+<img src="Polish_20251119_142404634.png" class="reader-photo">
+
+<div class="reader-text">
 
 <p>
-
-Welcome beautiful soul.
-
+Hello beautiful soul! I'm Tichele.
 </p>
 
 <p>
-
-My name is Tichele and I am the intuitive reader behind Tarot by Tichele.
-Through tarot, intuition, and spiritual guidance I help illuminate the
-paths, possibilities, and energies surrounding your life.
-
+Tarot has always been a sacred tool of reflection,
+guidance, and connection for me. My readings are focused
+on empowerment, clarity, and helping you reconnect with
+your intuition and life path.
 </p>
 
 <p>
-
-Whether you're seeking clarity in love, insight into a decision,
-or spiritual guidance for your next chapter, the cards reveal the
-messages your soul is ready to hear.
-
+Every reading is done with care, intention, and respect
+for the energy surrounding your journey.
 </p>
+
+</div>
 
 </section>
+
+
 
 <section class="services">
 
-<h2>Tarot Readings</h2>
+<h2>Available Readings</h2>
 
 <div class="service-card">
-
-<h3>Single Question Reading</h3>
-
-<p>A focused reading for one important question.</p>
-
-<button>Book Reading</button>
-
+<h3>3 Card Reading</h3>
+<p>Quick insight into a situation or question.</p>
 </div>
 
 <div class="service-card">
-
-<h3>3 Card Past / Present / Future</h3>
-
-<p>A classic tarot spread for guidance and direction.</p>
-
-<button>Book Reading</button>
-
+<h3>Past • Present • Future</h3>
+<p>A deeper look into the timeline of your situation.</p>
 </div>
 
 <div class="service-card">
-
-<h3>Full Celtic Cross Reading</h3>
-
-<p>A deep dive into your situation and the energies around you.</p>
-
-<button>Book Reading</button>
-
+<h3>Full Tarot Spread</h3>
+<p>A detailed reading exploring multiple aspects of your life path.</p>
 </div>
 
 </section>
 
+
+
+<section class="payment">
+
+<h2>Book a Reading</h2>
+
+<p>
+Payment accepted through
+<br><br>
+
+Venmo<br>
+CashApp
+</p>
+
+<p>
+After payment, message me with your question
+and we will begin your reading.
+</p>
+
+</section>
+
+
+
 <footer>
 
-Tarot by Tichele • Spiritual Guidance Through the Cards
+© Tarot by Tichele
 
 </footer>
 
 </body>
-
 </html>
