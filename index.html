@@ -3,238 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Tarot by Tichele</title>
+<title>Tarot By Tichele</title>
 
 <style>
-
 body{
-margin:0;
-font-family: Georgia, serif;
-background:#0c0c0c;
-color:white;
-text-align:center;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#111;
+    color:white;
+    text-align:center;
 }
-
-/* HEADER */
 
 header{
-padding:40px;
-background:#111;
+    padding:40px;
+    background:#1c1c1c;
 }
 
-header h1{
-font-size:48px;
-letter-spacing:3px;
-color:#e7c6ff;
+h1{
+    font-size:48px;
+    color:#d4af37;
 }
 
-header p{
-font-size:20px;
-color:#ccc;
+nav{
+    margin-top:20px;
 }
 
-/* HERO */
-
-.hero{
-padding:80px 20px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
 }
 
-.hero h2{
-font-size:36px;
-color:#e7c6ff;
+section{
+    padding:60px 20px;
 }
-
-/* MEET YOUR READER SECTION */
-
-.reader-section{
-position:relative;
-padding:120px 20px;
-margin-top:40px;
-
-background-image:url("mandala.png");
-background-size:500px;
-background-repeat:no-repeat;
-background-position:center top;
-}
-
-.reader-section h2{
-font-size:34px;
-margin-bottom:40px;
-}
-
-/* PHOTO */
-
-.reader-photo{
-width:260px;
-border-radius:50%;
-box-shadow:
-0 0 25px rgba(231,198,255,.8),
-0 0 60px rgba(231,198,255,.5);
-}
-
-/* TEXT */
-
-.reader-text{
-max-width:700px;
-margin:auto;
-margin-top:30px;
-font-size:18px;
-line-height:1.7;
-color:#ddd;
-}
-
-/* SERVICES */
 
 .services{
-padding:80px 20px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
-.services h2{
-font-size:32px;
-color:#e7c6ff;
-margin-bottom:30px;
+.card{
+    background:#222;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
 }
 
-.service-card{
-background:#1a1a1a;
-padding:30px;
-margin:15px auto;
-max-width:400px;
-border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,.6);
+button{
+    padding:12px 25px;
+    background:#d4af37;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
 }
-
-.service-card h3{
-margin-top:0;
-color:#e7c6ff;
-}
-
-/* PAYMENT */
-
-.payment{
-padding:80px 20px;
-background:#111;
-}
-
-.payment h2{
-color:#e7c6ff;
-}
-
-/* FOOTER */
 
 footer{
-padding:40px;
-font-size:14px;
-color:#aaa;
+    padding:20px;
+    background:#1c1c1c;
+    font-size:14px;
 }
-
 </style>
-</head>
 
+</head>
 
 <body>
 
 <header>
+<h1>Tarot By Tichele</h1>
+<p>Intuitive Tarot Readings for Guidance & Clarity</p>
 
-<h1>Tarot by Tichele</h1>
-
-<p>Insight • Guidance • Spiritual Clarity</p>
-
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#book">Book Reading</a>
+</nav>
 </header>
 
-
-<section class="hero">
-
-<h2>Welcome</h2>
-
+<section id="about">
+<h2>About Me</h2>
 <p>
-Tarot readings designed to bring clarity, empowerment,
-and spiritual insight into your life journey.
+Welcome! I'm Tichele, a tarot reader dedicated to helping you gain clarity, guidance,
+and spiritual insight through the cards.
 </p>
-
 </section>
 
+<section id="services">
+<h2>Tarot Services</h2>
 
+<div class="services">
 
-<section class="reader-section">
-
-<h2>Meet Your Reader</h2>
-
-<img src="Polish_20251119_142404634.png" class="reader-photo">
-
-<div class="reader-text">
-
-<p>
-Hello beautiful soul! I'm Tichele.
-</p>
-
-<p>
-Tarot has always been a sacred tool of reflection,
-guidance, and connection for me. My readings are focused
-on empowerment, clarity, and helping you reconnect with
-your intuition and life path.
-</p>
-
-<p>
-Every reading is done with care, intention, and respect
-for the energy surrounding your journey.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section class="services">
-
-<h2>Available Readings</h2>
-
-<div class="service-card">
+<div class="card">
 <h3>3 Card Reading</h3>
-<p>Quick insight into a situation or question.</p>
+<p>Past, Present, Future guidance.</p>
+<p>$15</p>
+<button>Book Now</button>
 </div>
 
-<div class="service-card">
-<h3>Past • Present • Future</h3>
-<p>A deeper look into the timeline of your situation.</p>
+<div class="card">
+<h3>Love Reading</h3>
+<p>Insight into your relationship path.</p>
+<p>$25</p>
+<button>Book Now</button>
 </div>
 
-<div class="service-card">
-<h3>Full Tarot Spread</h3>
-<p>A detailed reading exploring multiple aspects of your life path.</p>
+<div class="card">
+<h3>Full Celtic Cross</h3>
+<p>Deep dive into your life path.</p>
+<p>$45</p>
+<button>Book Now</button>
+</div>
+
 </div>
 
 </section>
 
-
-
-<section class="payment">
-
+<section id="book">
 <h2>Book a Reading</h2>
+<p>Email me to schedule a session.</p>
 
 <p>
-Payment accepted through
-<br><br>
-
-Venmo<br>
-CashApp
-</p>
-
-<p>
-After payment, message me with your question
-and we will begin your reading.
+<a href="mailto:youremail@email.com">
+<button>Contact Me</button>
+</a>
 </p>
 
 </section>
-
-
 
 <footer>
-
-© Tarot by Tichele
-
+<p>© 2026 Tarot By Tichele</p>
 </footer>
 
 </body>
