@@ -1,210 +1,128 @@
-1  <!DOCTYPE html>
-2  <html lang="en">
-3  <head>
-4  <meta charset="UTF-8">
-5  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-6  <title>Tarot By Tichele</title>
-7
-8  <style>
-9
-10 body{
-11 margin:0;
-12 font-family: Arial, sans-serif;
-13 text-align:center;
-14 color:#444;
-15 }
-16
-17 /* TOP HERO SECTION */
-18 .hero{
-19 padding:60px 20px;
-20 background:linear-gradient(135deg,#a56adf,#8ed1d1);
-21 }
-22
-23 .moon{
-24 font-size:40px;
-25 color:white;
-26 margin-bottom:10px;
-27 }
-28
-29 h1{
-30 font-size:48px;
-31 color:#1fd1c2;
-32 margin:10px 0 30px 0;
-33 letter-spacing:2px;
-34 }
-35
-36 .services{
-37 font-size:22px;
-38 line-height:1.8;
-39 font-weight:600;
-40 }
-41
-42 /* MEET READER SECTION */
-43 .reader-section{
-44 padding:80px 20px;
-45 background:linear-gradient(180deg,#9a63d6,#b17fdc);
-46 }
-47
-48 .reader-title{
-49 font-size:42px;
-50 color:#1fd1c2;
-51 margin-bottom:40px;
-52 }
-53
-54 .reader-photo{
-55 width:80%;
-56 max-width:350px;
-57 border-radius:10px;
-58 box-shadow:0 0 25px rgba(255,255,255,0.6);
-59 }
-60
-61 </style>
-62 </head>
-63
-64 <body>
-65
-66 <!-- TOP SECTION -->
-67 <section class="hero">
-68
-69 <div class="moon">☾</div>
-70
-71 <h1>TAROT BY TICHELE</h1>
-72
-73 <div class="services">
-74 ✨ Tarot Reading ✨<br>
-75 ✨ Protection Jars ✨<br>
-76 ✨ Natural Art ✨<br>
-77 ✨ Home Cleansing/Blessing ✨<br>
-78 ✨ Intention Candles ✨<br>
-79 ✨ Intention Satchets ✨
-80 </div>
-81
-82 </section>
-83
-84 <!-- MEET YOUR READER -->
-85 <section class="reader-section">
-86
-87 <div class="reader-title">
-88 MEET YOUR READER
-89 </div>
-90
-91 <img src="Polish_20251119_142404634.png" class="reader-photo">
-92
-93 </section>
-94
-95 </body>
-96 </html>
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tarot By Tichele</title><style>
 
-</div>
+/* PAGE */
 
+body{
+margin:0;
+font-family:Arial, sans-serif;
+text-align:center;
+color:#444;
+}
 
-<!-- HOME CLEANSING -->
+/* TOP GRADIENT SECTION */
 
-<div class="section">
+.hero{
+padding:70px 20px;
+background:linear-gradient(135deg,#a56adf,#8ed1d1);
+}
 
-<h2>HOME CLEANSING & BLESSING</h2>
+/* MOON */
 
-<p>
-Do you feel a lot of stagnant energy in your home? Have someone over who carries a dark cloud with them and now the house energy feels "off"?
-</p>
+.moon{
+font-size:42px;
+color:white;
+margin-bottom:10px;
+}
 
-<p>
-I offer Home Cleansing and Blessing services!
-</p>
+/* MAIN TITLE */
 
-<p>
-Home Cleansing is a good spiritual scrubbing of the energy of a space, via many different methods. I personally use herb smoke to rid a space of "negative" (stagnant or funky) energy.
-</p>
+.title{
+font-size:48px;
+color:#18d1c1;
+letter-spacing:2px;
+font-weight:bold;
+margin-bottom:30px;
+}
 
-<p>
-Once the energy is removed, it creates a void or open space in the home, which is where "Blessing" comes into play.
-</p>
+/* SERVICE LIST */
 
-<p>
-To bless a home, I gather herbs that are needed to give the home the new spiritual energy the client desires (for example, and herbal mix for bringing in "love, peace, and happiness" would have it's own herbal mix). I then burn these in a burn safe container and waft the smoke throughout the space that was just cleansed.
-</p>
+.services{
+font-size:22px;
+line-height:1.8;
+font-weight:600;
+}
 
-<p>
-Prices for this will vary depending on size of space.
-</p>
+/* MEET READER SECTION */
 
-</div>
+.reader-section{
+padding:80px 20px;
+background:linear-gradient(180deg,#9a63d6,#b17fdc);
+}
 
+/* READER TITLE */
 
-<!-- INTENTION CANDLES -->
+.reader-title{
+font-size:42px;
+color:#18d1c1;
+font-weight:bold;
+margin-bottom:40px;
+}
 
-<div class="section">
+/* PHOTO CONTAINER */
 
-<h2>INTENTION CANDLES</h2>
+.reader-container{
+position:relative;
+display:inline-block;
+}
 
-<p>
-Intention candles are similar to my protection jars, they are candles crafted with intent in mind and herbs/crystals/scents/colors to achieve a certain goal when the candle is used (or even placed in a space).
-</p>
+/* MANDALA BACKGROUND */
 
-<p><strong>CANDLES MUST BE SUPERVISED WHILE BURNING!!!!!</strong></p>
+.reader-container::before{
+content:"";
+position:absolute;
+top:-30px;
+left:-30px;
+right:-30px;
+bottom:-30px;
 
-<p>
-A variety of intents are available, including but not limited to:
-</p>
+background-image:url("5037782.jpg");
+background-size:cover;
+background-position:center;
 
-<ul>
-<li>Self Love</li>
-<li>Relationship development</li>
-<li>Good Luck</li>
-<li>Protection</li>
-<li>Divination</li>
-<li>Abundance (this doesn't have to only mean monetary gain!)</li>
-</ul>
+border-radius:20px;
+opacity:0.45;
+z-index:-1;
 
-<p>
-Whatever you need more of, the candle will help draw in.
-</p>
+filter:blur(2px);
+}
 
-</div>
+/* READER PHOTO */
 
+.reader-photo{
+width:80%;
+max-width:340px;
+border-radius:12px;
 
-<!-- INTENTION SATCHELS -->
+filter:
+drop-shadow(0 0 15px rgba(255,255,255,0.9))
+drop-shadow(0 0 30px rgba(0,255,200,0.7))
+drop-shadow(0 0 45px rgba(0,255,200,0.5));
+}
 
-<div class="section">
+/* NAME UNDER PHOTO */
 
-<h2>INTENTION SATCHELS</h2>
+.reader-name{
+margin-top:15px;
+font-size:24px;
+color:white;
+font-weight:bold;
+}
 
-<p>
-Intention Satchets are a little bag, filled with herbs and crystals for a specified intent. These can be carried in a purse or bag, set in a room or space, etc.
-</p>
+</style></head><body><!-- TOP SECTION --><section class="hero"><div class="moon">☾</div><div class="title">
+TAROT BY TICHELE
+</div><div class="services">✨ Tarot Reading ✨<br>
+✨ Protection Jars ✨<br>
+✨ Natural Art ✨<br>
+✨ Home Cleansing/Blessing ✨<br>
+✨ Intention Candles ✨<br>
+✨ Intention Satchets ✨
 
-<p>
-Similar to Protection Jars.
-</p>
-
-<p>
-Intentions include but are not limited to:
-</p>
-
-<ul>
-<li>Luck</li>
-<li>Protection</li>
-<li>Self Love</li>
-<li>Relationship Development</li>
-<li>Abundance (doesn't have to mean monetary gain, just what you need to draw more of into your life)</li>
-</ul>
-
-<p>
-Shipping available! Prices will vary on Satchet type and shipping.
-</p>
-
-<p>
-Delivery/Pickup Available for the following areas:
-</p>
-
-<p>
-Fife Lake<br>
-Kalkaska<br>
-Traverse City
-</p>
-
-</div>
-
-
-</body>
+</div></section><!-- MEET YOUR READER --><section class="reader-section"><div class="reader-title">
+MEET YOUR READER
+</div><div class="reader-container"><img src="Polish_20251119_142404634.png" class="reader-photo"></div><div class="reader-name">
+Tichele
+</div></section></body>
 </html>
