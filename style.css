@@ -2,24 +2,30 @@ body {
 
 margin:0;
 font-family:Georgia, serif;
-background:#1a0125;
+background:#14001f;
 color:white;
 text-align:center;
 
 }
 
+
+
 header {
 
-padding:30px;
+padding:40px;
 font-size:32px;
 
 }
+
+
 
 .reader-section {
 
 padding:60px 20px;
 
 }
+
+
 
 .reader-container {
 
@@ -30,6 +36,8 @@ margin:auto;
 
 }
 
+
+
 /* MANDALA BACKGROUND */
 
 .mandala {
@@ -37,22 +45,29 @@ margin:auto;
 position:absolute;
 width:100%;
 height:100%;
+
 background:url("5037782.jpg") center/cover no-repeat;
+
 opacity:.45;
-filter:brightness(1.2);
+
 animation:spin 120s linear infinite;
 
 }
+
+
 
 /* AURA GLOW */
 
 .aura {
 
 position:absolute;
+
 width:320px;
 height:320px;
+
 top:15px;
 left:15px;
+
 border-radius:50%;
 
 box-shadow:
@@ -65,36 +80,47 @@ animation:pulse 5s ease-in-out infinite;
 
 }
 
+
+
 /* PHOTO */
 
 .reader-photo {
 
 position:absolute;
+
 width:260px;
 height:260px;
+
 top:45px;
 left:45px;
+
 border-radius:50%;
+
 object-fit:cover;
 
 }
 
-/* SPARKLE FIELD */
+
+
+/* SPARKLES */
 
 .sparkles {
 
 position:absolute;
 width:100%;
 height:100%;
-pointer-events:none;
 
 }
+
+
 
 .sparkle {
 
 position:absolute;
+
 width:6px;
 height:6px;
+
 border-radius:50%;
 
 background:#a855f7;
@@ -108,7 +134,9 @@ animation:twinkle 3s infinite;
 
 }
 
-/* RANDOM POSITIONS */
+
+
+/* SPARKLE POSITIONS */
 
 .s1{top:10%;left:40%;}
 .s2{top:20%;left:80%;}
@@ -121,6 +149,23 @@ animation:twinkle 3s infinite;
 .s9{top:40%;left:20%;}
 .s10{top:65%;left:45%;}
 
+
+
+/* TEXT */
+
+.reader-text {
+
+max-width:600px;
+margin:auto;
+padding:30px;
+
+font-size:18px;
+line-height:1.6;
+
+}
+
+
+
 /* SERVICES */
 
 .services {
@@ -129,21 +174,57 @@ padding:60px 20px;
 
 }
 
+
+
 .service {
 
-margin:25px auto;
 max-width:500px;
+margin:40px auto;
+
+padding:25px;
+
+border:1px solid rgba(255,255,255,0.2);
+
+border-radius:12px;
+
+background:rgba(255,255,255,0.05);
 
 }
+
+
+
+.price {
+
+color:#b8f7ff;
+
+font-weight:bold;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+padding:40px;
+
+opacity:.7;
+
+}
+
+
 
 /* ANIMATIONS */
 
 @keyframes spin {
 
-from{transform:rotate(0deg);}
-to{transform:rotate(360deg);}
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
 
 }
+
+
 
 @keyframes pulse {
 
@@ -153,16 +234,12 @@ to{transform:rotate(360deg);}
 
 }
 
+
+
 @keyframes twinkle {
 
 0%{opacity:0;transform:scale(.5);}
 50%{opacity:1;transform:scale(1.4);}
 100%{opacity:0;transform:scale(.5);}
-
-}
-
-footer {
-
-padding:40px;
 
 }
