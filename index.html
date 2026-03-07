@@ -10,9 +10,9 @@
 
 <style>
 
-/* =================================
+/* =========================
 GLOBAL
-================================= */
+========================= */
 
 body{
 margin:0;
@@ -28,17 +28,13 @@ max-width:1000px;
 margin:auto;
 }
 
-h1,h2,h3{
-margin:0;
-}
-
 p{
 line-height:1.7;
 }
 
-/* =================================
-HERO SECTION
-================================= */
+/* =========================
+HERO
+========================= */
 
 .hero{
 padding-top:120px;
@@ -60,13 +56,9 @@ font-size:26px;
 margin:10px 0;
 }
 
-/* =================================
+/* =========================
 MEET YOUR READER
-================================= */
-
-.reader{
-margin-top:60px;
-}
+========================= */
 
 .reader h2{
 font-size:36px;
@@ -74,32 +66,27 @@ color:#38d1c4;
 margin-bottom:40px;
 }
 
-/* image stack */
-
 .reader-image-stack{
 position:relative;
-width:340px;
-height:340px;
+width:360px;
+height:360px;
 margin:auto;
 }
-
-/* mandala */
 
 .mandala{
 position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-width:340px;
-height:340px;
+width:360px;
+height:360px;
 border-radius:50%;
 background-image:url("5037782.jpg");
 background-size:cover;
 background-position:center;
 opacity:.9;
+animation:mandalaPulse 6s infinite ease-in-out;
 }
-
-/* reader photo */
 
 .reader-photo{
 position:absolute;
@@ -114,8 +101,58 @@ box-shadow:
 0 0 20px #6ffff3,
 0 0 40px #6ffff3,
 0 0 60px #6ffff3,
-0 0 80px #6ffff3;
+0 0 90px #6ffff3;
+
+animation:auraPulse 4s infinite ease-in-out;
 }
+
+.sparkles{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.sparkles span{
+position:absolute;
+width:6px;
+height:6px;
+background:white;
+border-radius:50%;
+opacity:.8;
+animation:sparkleFloat 6s linear infinite;
+}
+
+.sparkles span:nth-child(1){top:10%;left:30%;}
+.sparkles span:nth-child(2){top:70%;left:20%;}
+.sparkles span:nth-child(3){top:40%;left:80%;}
+.sparkles span:nth-child(4){top:85%;left:60%;}
+.sparkles span:nth-child(5){top:20%;left:70%;}
+.sparkles span:nth-child(6){top:60%;left:50%;}
+
+/* animations */
+
+@keyframes mandalaPulse{
+0%{transform:translate(-50%,-50%) scale(1);}
+50%{transform:translate(-50%,-50%) scale(1.05);}
+100%{transform:translate(-50%,-50%) scale(1);}
+}
+
+@keyframes auraPulse{
+0%{box-shadow:0 0 20px #6ffff3,0 0 40px #6ffff3,0 0 60px #6ffff3;}
+50%{box-shadow:0 0 40px #6ffff3,0 0 80px #6ffff3,0 0 120px #6ffff3;}
+100%{box-shadow:0 0 20px #6ffff3,0 0 40px #6ffff3,0 0 60px #6ffff3;}
+}
+
+@keyframes sparkleFloat{
+0%{transform:translateY(0);opacity:0;}
+50%{opacity:1;}
+100%{transform:translateY(-40px);opacity:0;}
+}
+
+/* bio */
 
 .bio{
 max-width:700px;
@@ -129,9 +166,9 @@ color:#38d1c4;
 margin-bottom:20px;
 }
 
-/* =================================
-SERVICES SECTION
-================================= */
+/* =========================
+SERVICE BOXES
+========================= */
 
 .services{
 margin-top:80px;
@@ -160,12 +197,10 @@ margin-top:30px;
 
 </head>
 
-
-
 <body>
 
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -187,7 +222,6 @@ margin-top:30px;
 </section>
 
 
-
 <!-- MEET YOUR READER -->
 
 <section class="reader">
@@ -198,11 +232,16 @@ margin-top:30px;
 
 <div class="mandala"></div>
 
-<img
-src="Polish_20251119_142404634.png"
-alt="Tichele Tarot Reader"
-class="reader-photo"
->
+<img src="Polish_20251119_142404634.png" class="reader-photo">
+
+<div class="sparkles">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
 
 </div>
 
@@ -223,13 +262,11 @@ My reading style is one that isn't sugar coated. I will tell you exactly how it 
 </section>
 
 
-
 <!-- SERVICES -->
 
 <section class="services">
 
 <h2>SERVICES</h2>
-
 
 <!-- TAROT -->
 
@@ -253,12 +290,7 @@ While this is the most basic definition out there, tarot to me is so much more. 
 <p>✨ Seven Card Pull: $20</p>
 <p>✨ Ten Card Pull: $25</p>
 
-<p>
-I typically charge per card, but other arrangements can be made (note that other arrangements will be priced accordingly)
-</p>
-
 </div>
-
 
 
 <!-- PROTECTION JARS -->
@@ -292,7 +324,6 @@ Traverse City
 </div>
 
 
-
 <!-- NATURAL ART -->
 
 <div class="service-box">
@@ -320,7 +351,6 @@ Traverse City
 </div>
 
 
-
 <!-- HOME CLEANSING -->
 
 <div class="service-box">
@@ -346,7 +376,6 @@ Prices for this will vary depending on size of space.
 </div>
 
 
-
 <!-- INTENTION CANDLES -->
 
 <div class="service-box">
@@ -369,7 +398,6 @@ Intention candles are similar to my protection jars, they are candles crafted wi
 </p>
 
 </div>
-
 
 
 <!-- INTENTION SATCHETS -->
@@ -401,7 +429,6 @@ Traverse City
 </p>
 
 </div>
-
 
 </section>
 
