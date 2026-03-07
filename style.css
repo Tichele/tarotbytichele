@@ -35,7 +35,7 @@ margin-bottom:20px;
 
 
 /* -----------------------------
-DIVIDER LINE
+DIVIDER
 ------------------------------*/
 
 .divider{
@@ -57,13 +57,13 @@ max-width:520px;
 
 margin:20px auto;
 
-padding:35px; /* creates equal top and bottom spacing */
+padding:30px;
 
 border:4px solid #89f0df;
 border-radius:16px;
 
 box-shadow:
-0 0 10px rgba(137,240,223,0.8),
+0 0 12px rgba(137,240,223,0.8),
 0 0 30px rgba(137,240,223,0.45);
 
 box-sizing:border-box;
@@ -71,6 +71,8 @@ box-sizing:border-box;
 display:flex;
 justify-content:center;
 align-items:center;
+
+overflow:hidden;
 
 }
 
@@ -86,6 +88,7 @@ height:auto;
 
 display:block;
 
-border-radius:10px;
+/* THIS LINE CENTERS THE OVAL */
+object-position:center 60%;
 
 }
