@@ -10,120 +10,150 @@
 
 <style>
 
-/* ===============================
-   GLOBAL STYLES
-================================ */
+/* =================================
+GLOBAL
+================================= */
 
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align:center;
-    background:linear-gradient(180deg,#a57adf,#8b6cc7);
-    color:#333;
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+background:linear-gradient(180deg,#a57adf,#8b6cc7);
+color:#2e2e2e;
+text-align:center;
 }
 
 section{
-    padding:80px 20px;
-    max-width:1000px;
-    margin:auto;
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
 }
 
-h1,h2{
-    margin:0;
+h1,h2,h3{
+margin:0;
 }
 
 p{
-    line-height:1.7;
+line-height:1.7;
 }
 
-/* ===============================
-   SERVICES / OFFERINGS SECTION
-================================ */
+/* =================================
+HERO SECTION
+================================= */
 
-.services{
-    font-size:28px;
-    line-height:2.2;
-    color:#2e2e2e;
-    margin-top:20px;
+.hero{
+padding-top:120px;
 }
 
-/* ===============================
-   MEET YOUR READER SECTION
-================================ */
-
-.reader-section{
-    margin-top:60px;
+.moon{
+font-size:50px;
+margin-bottom:20px;
 }
 
-/* Title */
-
-.reader-title{
-    font-size:36px;
-    font-weight:bold;
-    color:#38d1c4;
-    margin-bottom:40px;
+.hero h1{
+font-size:42px;
+letter-spacing:2px;
+margin-bottom:30px;
 }
 
-/* Container for image stack */
+.services-list p{
+font-size:26px;
+margin:10px 0;
+}
+
+/* =================================
+MEET YOUR READER
+================================= */
+
+.reader{
+margin-top:60px;
+}
+
+.reader h2{
+font-size:36px;
+color:#38d1c4;
+margin-bottom:40px;
+}
+
+/* image stack */
 
 .reader-image-stack{
-    position:relative;
-    width:340px;
-    height:340px;
-    margin:auto;
+position:relative;
+width:340px;
+height:340px;
+margin:auto;
 }
 
-/* Mandala background */
+/* mandala */
 
 .mandala{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:340px;
-    height:340px;
-    border-radius:50%;
-    background-image:url("5037782.jpg");
-    background-size:cover;
-    background-position:center;
-    opacity:.9;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:340px;
+height:340px;
+border-radius:50%;
+background-image:url("5037782.jpg");
+background-size:cover;
+background-position:center;
+opacity:.9;
 }
 
-/* Reader Photo */
+/* reader photo */
 
 .reader-photo{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:260px;
-    border-radius:50%;
-    z-index:2;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:260px;
+border-radius:50%;
+z-index:2;
 
-    /* Glow aura */
-
-    box-shadow:
-        0 0 20px #6ffff3,
-        0 0 40px #6ffff3,
-        0 0 60px #6ffff3,
-        0 0 80px #6ffff3;
+box-shadow:
+0 0 20px #6ffff3,
+0 0 40px #6ffff3,
+0 0 60px #6ffff3,
+0 0 80px #6ffff3;
 }
 
-/* Reader Name */
-
-.reader-name{
-    margin-top:40px;
-    font-size:26px;
-    font-weight:bold;
-    color:#38d1c4;
+.bio{
+max-width:700px;
+margin:40px auto 0 auto;
+font-size:18px;
 }
 
-/* Reader Bio */
+.bio h3{
+font-size:26px;
+color:#38d1c4;
+margin-bottom:20px;
+}
 
-.reader-bio{
-    max-width:700px;
-    margin:20px auto 0 auto;
-    font-size:18px;
+/* =================================
+SERVICES SECTION
+================================= */
+
+.services{
+margin-top:80px;
+}
+
+.service-box{
+background:white;
+padding:40px;
+margin:40px auto;
+max-width:800px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+text-align:left;
+}
+
+.service-box h3{
+text-align:center;
+margin-bottom:20px;
+}
+
+.service-box h4{
+margin-top:30px;
 }
 
 </style>
@@ -135,21 +165,22 @@ p{
 <body>
 
 
+<!-- HERO SECTION -->
 
-<!-- ===================================
-     SERVICES / OFFERINGS
-=================================== -->
+<section class="hero">
 
-<section>
+<div class="moon">☾</div>
 
-<div class="services">
+<h1>TAROT BY TICHELE</h1>
 
-✨ Tarot Reading ✨ <br>
-✨ Protection Jars ✨ <br>
-✨ Natural Art ✨ <br>
-✨ Home Cleansing/Blessing ✨ <br>
-✨ Intention Candles ✨ <br>
-✨ Intention Satchets ✨
+<div class="services-list">
+
+<p>✨ Tarot Reading ✨</p>
+<p>✨ Protection Jars ✨</p>
+<p>✨ Natural Art ✨</p>
+<p>✨ Home Cleansing/Blessing ✨</p>
+<p>✨ Intention Candles ✨</p>
+<p>✨ Intention Satchets ✨</p>
 
 </div>
 
@@ -157,41 +188,222 @@ p{
 
 
 
-<!-- ===================================
-     MEET YOUR READER
-=================================== -->
+<!-- MEET YOUR READER -->
 
-<section class="reader-section">
+<section class="reader">
 
-<div class="reader-title">
-MEET YOUR READER
-</div>
+<h2>MEET YOUR READER</h2>
 
 <div class="reader-image-stack">
 
 <div class="mandala"></div>
 
 <img
-    src="Polish_20251119_142404634.png"
-    alt="Tichele Tarot Reader"
-    class="reader-photo"
+src="Polish_20251119_142404634.png"
+alt="Tichele Tarot Reader"
+class="reader-photo"
 >
 
 </div>
 
-<div class="reader-name">
-TICHELE
-</div>
+<div class="bio">
 
-<div class="reader-bio">
+<h3>TICHELE</h3>
 
-Hi! I'm Tichele, creator and founder of Tarot By Tichele! I have been reading tarot cards for over 20 years and have been practicing my magic for over 8 years now. I specialize in protection jars and tarot reading. I also have mediumship abilities that I use during readings to help deliver deeper insight and spiritual guidance.
+<p>
+Hi! I'm Tichele, creator and founder of Tarot By Tichele! I have been reading tarot cards for over 20 years and have been practicing my magic for over 8 years now. I specialize in protection jars and tarot reading. I also have mediumship abilities that I am honing and exploring.
+</p>
+
+<p>
+My reading style is one that isn't sugar coated. I will tell you exactly how it is! My end goal is to help all of my clients be the absolute best versions of themselves that they can be!
+</p>
 
 </div>
 
 </section>
 
 
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<h2>SERVICES</h2>
+
+
+<!-- TAROT -->
+
+<div class="service-box">
+
+<h3>TAROT CARD READINGS</h3>
+
+<p>
+What is tarot? According to Merriam-Webster tarot is: any of a set of 78 playing cards including 22 pictorial cards used for fortune-telling.
+</p>
+
+<p>
+While this is the most basic definition out there, tarot to me is so much more. Reading tarot cards is a form of magic, with a little psychology sprinkled in. When I read I tell clients that I am a "Spiritual Therapist" and am here to help them work on things they may not have even known they needed work on.
+</p>
+
+<h4>PRICING</h4>
+
+<p>✨ Single Card Pull: $5</p>
+<p>✨ Three Card Pull: $10</p>
+<p>✨ Five Card Pull: $15</p>
+<p>✨ Seven Card Pull: $20</p>
+<p>✨ Ten Card Pull: $25</p>
+
+<p>
+I typically charge per card, but other arrangements can be made (note that other arrangements will be priced accordingly)
+</p>
+
+</div>
+
+
+
+<!-- PROTECTION JARS -->
+
+<div class="service-box">
+
+<h3>PROTECTION JARS</h3>
+
+<p>
+What is a "Protection Jar"? Simply put, it's a jar filled with herbs and crystals (among other things) with the intent to protect the owner of the jar.
+</p>
+
+<p>
+Orders are CUSTOM made (jar looks may vary jar to jar). Several different sizes are available and prices vary on size.
+</p>
+
+<p>
+Shipping jars available (prices will vary as shipping costs will be added in)
+</p>
+
+<p>
+Local Pickup is an option to Areas Available for Local Pickup:
+</p>
+
+<p>
+Fife Lake<br>
+Kalkaska<br>
+Traverse City
+</p>
+
+</div>
+
+
+
+<!-- NATURAL ART -->
+
+<div class="service-box">
+
+<h3>NATURAL ART</h3>
+
+<p>
+Natural Art is my way of honoring an animal. My supplies are naturally and ethically sourced, either gifts from nature or clients.
+</p>
+
+<p>
+Shipping isn't currently available on this as I haven't found a safe way to do so without possible damage to the art.
+</p>
+
+<p>
+Delivery/Pickup is available to these areas:
+</p>
+
+<p>
+Fife Lake<br>
+Kalkaska<br>
+Traverse City
+</p>
+
+</div>
+
+
+
+<!-- HOME CLEANSING -->
+
+<div class="service-box">
+
+<h3>HOME CLEANSING & BLESSING</h3>
+
+<p>
+Do you feel a lot of stagnant energy in your home? Have someone over who carries a dark cloud with them and now the house energy feels "off"?
+</p>
+
+<p>
+I offer Home Cleansing and Blessing services!
+</p>
+
+<p>
+Home Cleansing is a good spiritual scrubbing of the energy of a space, via many different methods. I personally use herb smoke to rid a space of "negative" (stagnant or funky) energy.
+</p>
+
+<p>
+Prices for this will vary depending on size of space.
+</p>
+
+</div>
+
+
+
+<!-- INTENTION CANDLES -->
+
+<div class="service-box">
+
+<h3>INTENTION CANDLES</h3>
+
+<p>
+Intention candles are similar to my protection jars, they are candles crafted with intent in mind and herbs/crystals/scents/colors to achieve a certain goal when the candle is used.
+</p>
+
+<p><strong>CANDLES MUST BE SUPERVISED WHILE BURNING!!!!!</strong></p>
+
+<p>
+❤️ Self Love<br>
+❤️ Relationship development<br>
+🍀 Good Luck<br>
+🧿 Protection<br>
+🔮 Divination<br>
+💵 Abundance
+</p>
+
+</div>
+
+
+
+<!-- INTENTION SATCHETS -->
+
+<div class="service-box">
+
+<h3>INTENTION SATCHETS</h3>
+
+<p>
+Intention Satchets are a little bag, filled with herbs and crystals for a specified intent.
+</p>
+
+<p>
+🍀 Luck<br>
+🧿 Protection<br>
+❤️ Self Love<br>
+❤️ Relationship Development<br>
+💵 Abundance
+</p>
+
+<p>
+Delivery/Pickup Available for:
+</p>
+
+<p>
+Fife Lake<br>
+Kalkaska<br>
+Traverse City
+</p>
+
+</div>
+
+
+</section>
 
 </body>
 </html>
