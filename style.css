@@ -1,285 +1,164 @@
-/* =====================================================
-   TAROT BY TICHELE
-   Main Stylesheet
-   style.css
-===================================================== */
-
-
-/* ==============================
-   RESET
-============================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-
-/* ==============================
-   BODY
-============================== */
+/* -----------------------------
+   GLOBAL PAGE SETTINGS
+------------------------------*/
 
 body{
-    font-family: "Georgia", serif;
-    line-height:1.6;
-    color:#f5f5f5;
-
-    background:
-    radial-gradient(circle at 20% 20%, rgba(170,140,255,0.15), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(255,170,220,0.12), transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(120,255,210,0.10), transparent 40%),
-    #0f0d16;
-
-    min-height:100vh;
-}
-
-
-/* ==============================
-   CONTAINER
-============================== */
-
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-}
-
-
-/* ==============================
-   TYPOGRAPHY
-============================== */
-
-h1,h2,h3{
-    font-weight:normal;
-    letter-spacing:1px;
-}
-
-h1{
-    font-size:2.8rem;
-}
-
-h2{
-    font-size:2rem;
-    margin-bottom:15px;
-}
-
-p{
-    margin-bottom:15px;
-}
-
-
-/* ==============================
-   HEADER
-============================== */
-
-header{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg,#7c58c7,#a06ac7);
+    color:#333;
     text-align:center;
-    padding:60px 20px 40px 20px;
-}
-
-header h1{
-    font-size:3rem;
-}
-
-header p{
-    font-size:1.1rem;
-    opacity:.85;
+    position:relative;
+    overflow-x:hidden;
 }
 
 
-/* ==============================
-   NAVIGATION
-============================== */
-
-nav{
-    text-align:center;
-    padding-bottom:25px;
-}
-
-nav a{
-    color:#e6ddff;
-    text-decoration:none;
-    margin:0 15px;
-    font-size:1rem;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#ffffff;
-}
-
-
-/* ==============================
-   SECTION BASE
-============================== */
-
-section{
-    padding:70px 0;
-    border-top:1px solid rgba(255,255,255,0.05);
-}
-
-
-/* ==============================
-   CARDS / SERVICE SECTIONS
-============================== */
-
-.card{
-    background:rgba(255,255,255,0.03);
-    border-radius:12px;
-    padding:30px;
-
-    backdrop-filter:blur(6px);
-
-    box-shadow:
-    0 0 20px rgba(160,130,255,0.08),
-    0 0 40px rgba(255,150,200,0.05);
-
-    margin-bottom:30px;
-}
-
-
-/* ==============================
-   BUTTONS
-============================== */
-
-button,
-.btn{
-    display:inline-block;
-
-    padding:12px 24px;
-
-    border:none;
-    border-radius:25px;
-
-    background:linear-gradient(
-        135deg,
-        #cfa6ff,
-        #8cf0d0
-    );
-
-    color:#1a1625;
-
-    font-weight:bold;
-    text-decoration:none;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-button:hover,
-.btn:hover{
-    transform:translateY(-2px);
-
-    box-shadow:
-    0 0 12px rgba(200,160,255,0.4),
-    0 0 25px rgba(120,255,210,0.25);
-}
-
-
-/* ==============================
-   MEET YOUR READER
-============================== */
-
-.reader-container{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-.reader-image img{
-
-    width:320px;
-    max-width:100%;
-
-    border-radius:12px;
-
-    box-shadow:
-    0 0 25px rgba(180,120,255,0.45),
-    0 0 60px rgba(120,255,210,0.30),
-    0 0 90px rgba(255,150,200,0.22);
-}
-
-.reader-text{
-    flex:1;
-    min-width:260px;
-}
-
-
-/* ==============================
-   SUBTLE STAR FIELD
-============================== */
+/* -----------------------------
+   TWINKLING STAR BACKGROUND
+------------------------------*/
 
 body::before{
-
     content:"";
-
     position:fixed;
-
     top:0;
     left:0;
-
     width:100%;
     height:100%;
 
-    pointer-events:none;
-
     background-image:
-    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.6), transparent),
-    radial-gradient(1px 1px at 70% 80%, rgba(255,255,255,.5), transparent),
-    radial-gradient(1px 1px at 40% 60%, rgba(255,255,255,.4), transparent),
-    radial-gradient(2px 2px at 85% 20%, rgba(255,255,255,.5), transparent);
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(1px 1px at 70% 80%, white, transparent),
+    radial-gradient(1.5px 1.5px at 40% 60%, white, transparent),
+    radial-gradient(2px 2px at 90% 20%, white, transparent),
+    radial-gradient(1px 1px at 10% 70%, white, transparent);
 
-    opacity:.35;
-
+    opacity:0.35;
     animation:twinkle 6s infinite alternate;
+    pointer-events:none;
 }
-
-
-/* ==============================
-   TWINKLE ANIMATION
-============================== */
 
 @keyframes twinkle{
-
-    from{
-        opacity:.2;
-    }
-
-    to{
-        opacity:.45;
-    }
-
+    from{opacity:0.25;}
+    to{opacity:0.45;}
 }
 
 
-/* ==============================
-   FOOTER
-============================== */
+/* -----------------------------
+   SECTION SPACING
+------------------------------*/
 
-footer{
-    text-align:center;
-    padding:40px 20px;
-    font-size:.9rem;
-    opacity:.7;
+.section{
+    padding:60px 20px;
+    position:relative;
+    z-index:2;
 }
 
 
-/* ==============================
-   MOBILE
-============================== */
+/* -----------------------------
+   CARD CONTAINERS
+------------------------------*/
 
-@media(max-width:768px){
+.card{
+    max-width:750px;
+    margin:auto;
+    padding:40px;
 
-    header h1{
-        font-size:2.3rem;
-    }
+    border:3px solid #89f0df;
+    border-radius:12px;
 
-    .reader-container{
-        flex-direction:column;
-        text-align:center;
-    }
+    background:rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 0 8px rgba(137,240,223,0.5),
+    0 0 20px rgba(137,240,223,0.25);
+}
+
+
+/* -----------------------------
+   HEADINGS
+------------------------------*/
+
+h1{
+    color:#21e6c1;
+    font-size:42px;
+    letter-spacing:2px;
+
+    text-shadow:
+    0 0 8px rgba(33,230,193,0.6);
+}
+
+h2{
+    color:#21e6c1;
+    font-size:36px;
+
+    text-shadow:
+    0 0 6px rgba(33,230,193,0.6);
+}
+
+h3{
+    color:#21e6c1;
+    font-size:28px;
+}
+
+
+/* -----------------------------
+   TEXT
+------------------------------*/
+
+p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+/* -----------------------------
+   LISTS
+------------------------------*/
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    font-size:18px;
+    padding:6px 0;
+}
+
+
+/* -----------------------------
+   SECTION DIVIDER
+------------------------------*/
+
+.divider{
+    height:2px;
+    background:#89f0df;
+    width:80%;
+    margin:60px auto;
+
+    box-shadow:
+    0 0 8px rgba(137,240,223,0.6);
+}
+
+
+/* -----------------------------
+   PORTRAIT IMAGE
+------------------------------*/
+
+.portrait{
+
+    width:90%;
+    max-width:500px;
+
+    display:block;
+
+    margin:30px auto 80px auto;
+
+    border:4px solid #89f0df;
+    border-radius:12px;
+
+    box-shadow:
+    0 0 10px rgba(137,240,223,0.6),
+    0 0 25px rgba(137,240,223,0.4);
 
 }
