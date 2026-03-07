@@ -16,7 +16,7 @@ SECTION SPACING
 ------------------------------*/
 
 .section{
-padding:60px 20px;
+padding:40px 20px;
 }
 
 
@@ -30,19 +30,19 @@ color:#21e6c1;
 
 h2{
 font-size:40px;
-margin-bottom:40px;
+margin-bottom:20px;
 }
 
 
 /* -----------------------------
-DIVIDER
+DIVIDER LINE
 ------------------------------*/
 
 .divider{
 height:2px;
 background:#89f0df;
 width:80%;
-margin:60px auto;
+margin:30px auto;
 }
 
 
@@ -56,7 +56,7 @@ width:90%;
 max-width:520px;
 aspect-ratio:1/1;
 
-margin:40px auto;
+margin:20px auto;
 
 border:4px solid #89f0df;
 border-radius:16px;
