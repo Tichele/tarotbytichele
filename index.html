@@ -1,240 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tarot By Tichele</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ===============================
+   GLOBAL STYLES
+================================ */
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    background:linear-gradient(180deg,#a57adf,#8b6cc7);
+    color:#333;
+}
+
+section{
+    padding:80px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h1,h2{
+    margin:0;
+}
+
+p{
+    line-height:1.7;
+}
+
+/* ===============================
+   SERVICES / OFFERINGS SECTION
+================================ */
+
+.services{
+    font-size:28px;
+    line-height:2.2;
+    color:#2e2e2e;
+    margin-top:20px;
+}
+
+/* ===============================
+   MEET YOUR READER SECTION
+================================ */
+
+.reader-section{
+    margin-top:60px;
+}
+
+/* Title */
+
+.reader-title{
+    font-size:36px;
+    font-weight:bold;
+    color:#38d1c4;
+    margin-bottom:40px;
+}
+
+/* Container for image stack */
+
+.reader-image-stack{
+    position:relative;
+    width:340px;
+    height:340px;
+    margin:auto;
+}
+
+/* Mandala background */
+
+.mandala{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:340px;
+    height:340px;
+    border-radius:50%;
+    background-image:url("5037782.jpg");
+    background-size:cover;
+    background-position:center;
+    opacity:.9;
+}
+
+/* Reader Photo */
+
+.reader-photo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:260px;
+    border-radius:50%;
+    z-index:2;
+
+    /* Glow aura */
+
+    box-shadow:
+        0 0 20px #6ffff3,
+        0 0 40px #6ffff3,
+        0 0 60px #6ffff3,
+        0 0 80px #6ffff3;
+}
+
+/* Reader Name */
+
+.reader-name{
+    margin-top:40px;
+    font-size:26px;
+    font-weight:bold;
+    color:#38d1c4;
+}
+
+/* Reader Bio */
+
+.reader-bio{
+    max-width:700px;
+    margin:20px auto 0 auto;
+    font-size:18px;
+}
+
+</style>
+
 </head>
+
+
 
 <body>
 
-<!-- HERO SECTION -->
-
-<section class="hero">
-
-<div class="moon">☾</div>
-
-<h1>TAROT BY TICHELE</h1>
-
-<div class="services-list">
-
-<p>✨ Tarot Reading ✨</p>
-<p>✨ Protection Jars ✨</p>
-<p>✨ Natural Art ✨</p>
-<p>✨ Home Cleansing/Blessing ✨</p>
-<p>✨ Intention Candles ✨</p>
-<p>✨ Intention Satchets ✨</p>
-
-</div>
-
-</section>
 
 
-<!-- MEET YOUR READER -->
+<!-- ===================================
+     SERVICES / OFFERINGS
+=================================== -->
 
-<section class="reader">
+<section>
 
-<h2>MEET YOUR READER</h2>
+<div class="services">
 
-<div class="reader-container">
-
-<div class="mandala-bg"></div>
-
-<img src="Polish_20251119_142404634.png" class="reader-photo">
-
-</div>
-
-<div class="bio">
-
-<h3>TICHELE</h3>
-
-<p>
-Hi! I'm Tichele, creator and founder of Tarot By Tichele! I have been reading tarot cards for over 20 years and have been practicing my magic for over 8 years now. I specialize in protection jars and tarot reading. I also have mediumship abilities that I am honing and exploring.
-</p>
-
-<p>
-My reading style is one that isn't sugar coated . I will tell you exactly how it is! My end goal is to help all of my clients be the absolute best versions of themselves that they can be!
-</p>
+✨ Tarot Reading ✨ <br>
+✨ Protection Jars ✨ <br>
+✨ Natural Art ✨ <br>
+✨ Home Cleansing/Blessing ✨ <br>
+✨ Intention Candles ✨ <br>
+✨ Intention Satchets ✨
 
 </div>
 
 </section>
 
 
-<!-- SERVICES -->
 
-<section class="services">
+<!-- ===================================
+     MEET YOUR READER
+=================================== -->
 
-<h2>SERVICES</h2>
+<section class="reader-section">
 
-<!-- TAROT -->
+<div class="reader-title">
+MEET YOUR READER
+</div>
 
-<div class="service-box">
+<div class="reader-image-stack">
 
-<h3>TAROT CARD READINGS</h3>
+<div class="mandala"></div>
 
-<p>
-What is tarot? According to Merriam-Webster tarot is: any of a set of 78 playing cards including 22 pictorial cards used for fortune-telling.
-</p>
-
-<p>
-While this is the most basic definition out there, tarot to me is so much more. Reading tarot cards is a form of magic, with a little psychology sprinkled in. When I read I tell clients that I am a "Spiritual Therapist" and am here to help them work on things they may not have even known they needed work on.
-</p>
-
-<h4>PRICING</h4>
-
-<p>✨ Single Card Pull: $5</p>
-<p>✨ Three Card Pull: $10</p>
-<p>✨ Five Card Pull: $15</p>
-<p>✨ Seven Card Pull: $20</p>
-<p>✨ Ten Card Pull: $25</p>
-
-<p>
-I typically charge per card, but other arrangements can be made (note that other arrangements will be priced accordingly)
-</p>
+<img
+    src="Polish_20251119_142404634.png"
+    alt="Tichele Tarot Reader"
+    class="reader-photo"
+>
 
 </div>
 
-
-<!-- PROTECTION JARS -->
-
-<div class="service-box">
-
-<h3>PROTECTION JARS</h3>
-
-<p>
-What is a "Protection Jar"? Simply put, it's a jar filled with herbs and crystals (among other things) with the intent to protect the owner of the jar.
-</p>
-
-<p>
-Orders are CUSTOM made (jar looks may vary jar to jar). Several different sizes are available and prices vary on size.
-</p>
-
-<p>
-Shipping jars available (prices will vary as shipping costs will be added in)
-</p>
-
-<p>
-Local Pickup is an option to Areas Available for Local Pickup:
-</p>
-
-<p>
-Fife Lake<br>
-Kalkaska<br>
-Traverse City
-</p>
-
+<div class="reader-name">
+TICHELE
 </div>
 
+<div class="reader-bio">
 
-<!-- NATURAL ART -->
-
-<div class="service-box">
-
-<h3>NATURAL ART</h3>
-
-<p>
-Natural Art is my way of honoring an animal. My supplies are naturally and ethically sourced, either gifts from nature or clients.
-</p>
-
-<p>
-Shipping isn't currently available on this as I haven't found a safe way to do so without possible damage to the art.
-</p>
-
-<p>
-Delivery/Pickup is available to these areas:
-</p>
-
-<p>
-Fife Lake<br>
-Kalkaska<br>
-Traverse City
-</p>
-
-</div>
-
-
-<!-- HOME CLEANSING -->
-
-<div class="service-box">
-
-<h3>HOME CLEANSING & BLESSING</h3>
-
-<p>
-Do you feel a lot of stagnant energy in your home? Have someone over who carries a dark cloud with them and now the house energy feels "off"?
-</p>
-
-<p>
-I offer Home Cleansing and Blessing services!
-</p>
-
-<p>
-Home Cleansing is a good spiritual scrubbing of the energy of a space, via many different methods. I personally use herb smoke to rid a space of "negative" (stagnant or funky) energy.
-</p>
-
-<p>
-Prices for this will vary depending on size of space.
-</p>
-
-</div>
-
-
-<!-- INTENTION CANDLES -->
-
-<div class="service-box">
-
-<h3>INTENTION CANDLES</h3>
-
-<p>
-Intention candles are similar to my protection jars, they are candles crafted with intent in mind and herbs/crystals/scents/colors to achieve a certain goal when the candle is used.
-</p>
-
-<p><strong>CANDLES MUST BE SUPERVISED WHILE BURNING!!!!!</strong></p>
-
-<p>
-❤️ Self Love<br>
-❤️ Relationship development<br>
-🍀 Good Luck<br>
-🧿 Protection<br>
-🔮 Divination<br>
-💵 Abundance
-</p>
-
-</div>
-
-
-<!-- INTENTION SATCHETS -->
-
-<div class="service-box">
-
-<h3>INTENTION SATCHETS</h3>
-
-<p>
-Intention Satchets are a little bag, filled with herbs and crystals for a specified intent.
-</p>
-
-<p>
-🍀 Luck<br>
-🧿 Protection<br>
-❤️ Self Love<br>
-❤️ Relationship Development<br>
-💵 Abundance
-</p>
-
-<p>
-Delivery/Pickup Available for:
-</p>
-
-<p>
-Fife Lake<br>
-Kalkaska<br>
-Traverse City
-</p>
+Hi! I'm Tichele, creator and founder of Tarot By Tichele! I have been reading tarot cards for over 20 years and have been practicing my magic for over 8 years now. I specialize in protection jars and tarot reading. I also have mediumship abilities that I use during readings to help deliver deeper insight and spiritual guidance.
 
 </div>
 
 </section>
+
+
 
 </body>
 </html>
