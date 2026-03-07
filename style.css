@@ -1,3 +1,7 @@
+/* ===============================
+GLOBAL
+================================ */
+
 *{
 margin:0;
 padding:0;
@@ -5,182 +9,285 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Quicksand, sans-serif;
+
+font-family:'Quicksand',sans-serif;
+
+background:#120822;
+
 color:white;
-background:radial-gradient(circle at top,#4c2d82,#1a1033 70%);
-min-height:100vh;
+
+line-height:1.6;
+
 overflow-x:hidden;
+
 }
 
-/* STAR BACKGROUND */
+
+
+/* ===============================
+STAR BACKGROUND
+================================ */
 
 .stars{
+
 position:fixed;
+
+top:0;
+left:0;
+
 width:100%;
 height:100%;
-background-image:
-radial-gradient(white 1px, transparent 1px),
-radial-gradient(white 1px, transparent 1px);
-background-size:3px 3px,5px 5px;
-background-position:0 0,25px 25px;
-opacity:.35;
-animation:twinkle 6s infinite alternate;
+
+background:
+radial-gradient(2px 2px at 20% 30%, white, transparent),
+radial-gradient(2px 2px at 70% 60%, white, transparent),
+radial-gradient(1px 1px at 40% 80%, white, transparent),
+radial-gradient(1px 1px at 90% 20%, white, transparent);
+
+background-size:600px 600px;
+
+animation:starScroll 120s linear infinite;
+
+opacity:.4;
+
 z-index:-1;
+
 }
 
-@keyframes twinkle{
-from{opacity:.2;}
-to{opacity:.6;}
+@keyframes starScroll{
+
+from{transform:translateY(0);}
+to{transform:translateY(-1000px);}
+
 }
 
 
-/* HERO */
+
+/* ===============================
+HEADER
+================================ */
 
 .hero{
+
 text-align:center;
-padding:60px 20px 40px;
+
+padding:80px 20px;
+
+background:radial-gradient(circle,#3b1f6d,#120822);
+
 }
 
 .hero h1{
-font-family:Cinzel;
-font-size:52px;
-color:#aeeaff;
+
+font-family:'Cinzel',serif;
+
+font-size:3.5rem;
+
+color:#b7e4ff;
+
 margin-bottom:10px;
+
 }
 
 .tagline{
-font-size:20px;
+
+font-size:1.2rem;
+
+opacity:.9;
+
 margin-bottom:40px;
+
 }
 
 
-/* PORTRAIT */
 
-.portrait-wrapper{
+/* ===============================
+PORTRAIT
+================================ */
+
+.portrait-container{
+
 position:relative;
+
 width:320px;
+
 margin:auto;
+
 }
 
-.portrait-wrapper img{
+.portrait-container img{
+
 width:100%;
+
 border-radius:50%;
+
 position:relative;
+
 z-index:3;
+
 }
 
 
-/* MANDALA */
 
-.mandala{
-position:absolute;
-width:420px;
-height:420px;
-top:-50px;
-left:-50px;
-background:url("mandala.png") center/contain no-repeat;
-opacity:.4;
-z-index:1;
-}
-
-
-/* AURA RING */
+/* glowing aura */
 
 .aura{
+
 position:absolute;
-width:360px;
-height:360px;
+
+width:100%;
+height:100%;
+
 border-radius:50%;
-top:-20px;
-left:-20px;
+
+background:radial-gradient(circle,rgba(120,200,255,.4),transparent 70%);
+
+filter:blur(30px);
+
+animation:auraPulse 6s ease-in-out infinite;
+
+z-index:1;
+
+}
+
+@keyframes auraPulse{
+
+0%{transform:scale(1);opacity:.7;}
+50%{transform:scale(1.1);opacity:1;}
+100%{transform:scale(1);opacity:.7;}
+
+}
+
+
+
+/* mandala glow */
+
+.mandala{
+
+position:absolute;
+
+width:130%;
+height:130%;
+
+top:-15%;
+left:-15%;
+
+border-radius:50%;
+
 box-shadow:
-0 0 25px #6efcff,
-0 0 45px #6efcff,
-0 0 90px #6efcff,
-inset 0 0 20px #6efcff;
-z-index:2;
+
+0 0 40px #7be7ff,
+0 0 80px #8a5cff,
+0 0 120px rgba(138,92,255,.6);
+
+z-index:0;
+
 }
 
 
-/* FLOATING SPARKLES */
 
-.sparkles{
-position:absolute;
-width:100%;
-height:100%;
-pointer-events:none;
-}
-
-.sparkles::before,
-.sparkles::after{
-content:"";
-position:absolute;
-width:100%;
-height:100%;
-background-image:radial-gradient(#fff 2px,transparent 2px);
-background-size:40px 40px;
-animation:sparkle 8s linear infinite;
-opacity:.6;
-}
-
-.sparkles::after{
-animation-duration:12s;
-opacity:.4;
-}
-
-@keyframes sparkle{
-from{transform:rotate(0deg);}
-to{transform:rotate(360deg);}
-}
-
-
-/* CONTENT */
+/* ===============================
+CONTENT
+================================ */
 
 .content{
-width:90%;
+
 max-width:900px;
+
 margin:auto;
-padding:40px 0;
+
+padding:60px 20px;
+
 }
 
+
+
+/* ===============================
+SECTIONS
+================================ */
+
 .section{
-border:2px solid rgba(180,150,255,.4);
-border-radius:12px;
-padding:30px;
-margin-bottom:40px;
-background:rgba(40,20,80,.45);
-backdrop-filter:blur(6px);
+
+margin-bottom:60px;
+
+padding:40px;
+
+background:rgba(30,15,60,.7);
+
+border-radius:16px;
+
+box-shadow:
+
+0 0 25px rgba(140,100,255,.2);
+
 }
 
 .section h2{
-font-family:Cinzel;
-color:#3df0e0;
-margin-bottom:15px;
+
+font-family:'Cinzel',serif;
+
+margin-bottom:20px;
+
+color:#b7e4ff;
+
 }
 
-.section p{
-line-height:1.6;
-margin-bottom:15px;
-}
 
 
-/* LISTS */
+/* ===============================
+PRICING
+================================ */
 
-ul{
+.pricing{
+
 list-style:none;
-padding-left:10px;
+
+margin-top:20px;
+
 }
 
-li{
-margin-bottom:10px;
-font-size:18px;
+.pricing li{
+
+padding:10px 0;
+
+border-bottom:1px solid rgba(255,255,255,.1);
+
 }
 
 
-/* FOOTER */
+
+/* glowing pricing box */
+
+.pricing-glow{
+
+padding:30px;
+
+border-radius:16px;
+
+background:rgba(40,20,80,.6);
+
+box-shadow:
+
+0 0 25px rgba(138,92,255,.5),
+0 0 60px rgba(100,60,255,.4),
+0 0 120px rgba(120,80,255,.3);
+
+}
+
+
+
+/* ===============================
+FOOTER
+================================ */
 
 footer{
+
 text-align:center;
-padding:40px 0;
+
+padding:40px;
+
 opacity:.7;
+
+font-size:.9rem;
+
 }
