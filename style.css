@@ -1,99 +1,104 @@
 body{
 margin:0;
 padding:0;
-background:linear-gradient(180deg,#7c58c7,#9d73c7);
-font-family:Arial, sans-serif;
+background:#0b0220;
+color:white;
+font-family:serif;
 text-align:center;
-color:black;
 }
 
-section{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
+
+/* STAR FIELD BACKGROUND */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+opacity:.25;
+z-index:-1;
 }
 
-.header-main{
+
+/* HEADER */
+
+h1{
 font-family:'Fleur De Leah', cursive;
 font-size:60px;
-color:#2ce0c3;
-letter-spacing:3px;
-}
-
-.header{
-font-family:'Fleur De Leah', cursive;
-font-size:52px;
-color:#2ce0c3;
-letter-spacing:3px;
+letter-spacing:2px;
 margin-top:40px;
 }
 
-.header-small{
+
+h2{
 font-family:'Fleur De Leah', cursive;
-font-size:40px;
-color:#2ce0c3;
+font-size:42px;
+margin-top:70px;
+margin-bottom:30px;
 }
 
-.pricing{
-font-family:'Fleur De Leah', cursive;
-font-size:32px;
-color:#2ce0c3;
-}
 
-.services{
-list-style:none;
-padding:0;
-font-size:20px;
-line-height:2;
-}
+/* SERVICE LIST */
 
 ul{
-font-size:20px;
-line-height:1.8;
-list-style-position:inside;
+list-style:none;
 padding:0;
-}
-
-p{
-max-width:700px;
-margin:20px auto;
-font-size:19px;
+font-size:22px;
 line-height:1.8;
 }
 
-.reader-img{
+
+/* READER SECTION */
+
+.reader-section{
+margin-top:40px;
+}
+
+
+/* READER IMAGE */
+
+.reader-image{
 width:260px;
-border-radius:20px;
-border:5px solid #78f0d6;
-box-shadow:0 0 20px #78f0d6;
-margin:20px auto;
+max-width:80%;
+border-radius:50%;
 display:block;
+margin:30px auto;
+
+box-shadow:
+0 0 10px rgba(175,150,255,0.6),
+0 0 25px rgba(175,150,255,0.5),
+0 0 60px rgba(175,150,255,0.4);
+
+animation:auraGlow 6s ease-in-out infinite alternate;
 }
 
-.divider{
-height:3px;
-width:85%;
-background:#78f0d6;
-margin:50px auto;
-border-radius:2px;
+
+/* AURA SHIMMER ANIMATION */
+
+@keyframes auraGlow{
+
+0%{
+box-shadow:
+0 0 10px rgba(175,150,255,0.4),
+0 0 25px rgba(175,150,255,0.3),
+0 0 50px rgba(175,150,255,0.3);
 }
 
-@media (max-width:600px){
-
-.header-main{
-font-size:44px;
+50%{
+box-shadow:
+0 0 20px rgba(200,180,255,0.8),
+0 0 40px rgba(200,180,255,0.6),
+0 0 80px rgba(200,180,255,0.6);
 }
 
-.header{
-font-size:38px;
-}
-
-.header-small{
-font-size:30px;
-}
-
-p{
-font-size:17px;
+100%{
+box-shadow:
+0 0 12px rgba(175,150,255,0.5),
+0 0 28px rgba(175,150,255,0.4),
+0 0 60px rgba(175,150,255,0.4);
 }
 
 }
