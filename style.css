@@ -1,5 +1,5 @@
 /* -----------------------------
-   GLOBAL PAGE SETTINGS
+GLOBAL PAGE SETTINGS
 ------------------------------*/
 
 body{
@@ -8,13 +8,12 @@ body{
     background: linear-gradient(180deg,#7c58c7,#a06ac7);
     color:#333;
     text-align:center;
-    position:relative;
     overflow-x:hidden;
 }
 
 
 /* -----------------------------
-   TWINKLING STAR BACKGROUND
+TWINKLING STAR BACKGROUND
 ------------------------------*/
 
 body::before{
@@ -44,18 +43,16 @@ body::before{
 
 
 /* -----------------------------
-   SECTION SPACING
+SECTION SPACING
 ------------------------------*/
 
 .section{
     padding:60px 20px;
-    position:relative;
-    z-index:2;
 }
 
 
 /* -----------------------------
-   CARD CONTAINERS
+CARD CONTAINERS
 ------------------------------*/
 
 .card{
@@ -75,7 +72,7 @@ body::before{
 
 
 /* -----------------------------
-   HEADINGS
+HEADINGS
 ------------------------------*/
 
 h1{
@@ -98,7 +95,7 @@ h3{
 
 
 /* -----------------------------
-   TEXT
+TEXT
 ------------------------------*/
 
 p{
@@ -108,7 +105,7 @@ p{
 
 
 /* -----------------------------
-   LISTS
+LISTS
 ------------------------------*/
 
 ul{
@@ -123,7 +120,7 @@ li{
 
 
 /* -----------------------------
-   SECTION DIVIDER
+SECTION DIVIDER
 ------------------------------*/
 
 .divider{
@@ -136,7 +133,7 @@ li{
 
 
 /* -----------------------------
-   PORTRAIT FRAME
+PORTRAIT FRAME
 ------------------------------*/
 
 .portrait-frame{
@@ -146,7 +143,7 @@ li{
 
     margin:40px auto;
 
-    padding:40px;
+    padding:30px;
 
     border:4px solid #89f0df;
     border-radius:12px;
@@ -155,14 +152,12 @@ li{
     0 0 10px rgba(137,240,223,0.6),
     0 0 25px rgba(137,240,223,0.4);
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    box-sizing:border-box;
 }
 
 
 /* -----------------------------
-   PORTRAIT IMAGE
+PORTRAIT IMAGE
 ------------------------------*/
 
 .portrait{
