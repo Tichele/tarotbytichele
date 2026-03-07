@@ -1,119 +1,168 @@
-body{
+body {
 
 margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(180deg,#a46ad7,#8e6fd6,#9a7bd9);
-color:#333;
+font-family:Georgia, serif;
+background:#1a0125;
+color:white;
 text-align:center;
 
 }
 
+header {
 
-h1,h2,h3{
-
-color:#1fd1c2;
-
-}
-
-
-.hero{
-
-padding:100px 20px;
+padding:30px;
+font-size:32px;
 
 }
 
+.reader-section {
 
-.moon{
-
-font-size:40px;
-margin-bottom:20px;
+padding:60px 20px;
 
 }
 
-
-.services-list p{
-
-font-size:20px;
-margin:8px;
-
-}
-
-
-.reader{
-
-padding:80px 20px;
-
-}
-
-
-.reader-container{
+.reader-container {
 
 position:relative;
-width:320px;
+width:350px;
+height:350px;
 margin:auto;
 
 }
 
+/* MANDALA BACKGROUND */
 
-/* Mandala behind photo */
+.mandala {
 
-.mandala-bg{
+position:absolute;
+width:100%;
+height:100%;
+background:url("5037782.jpg") center/cover no-repeat;
+opacity:.45;
+filter:brightness(1.2);
+animation:spin 120s linear infinite;
 
-background-image:url("5037782.jpg");
-background-size:cover;
-background-position:center;
+}
+
+/* AURA GLOW */
+
+.aura {
+
+position:absolute;
 width:320px;
 height:320px;
+top:15px;
+left:15px;
 border-radius:50%;
+
+box-shadow:
+
+0 0 40px #14f1ff,
+0 0 80px #9f4dff,
+0 0 120px #14f1ff;
+
+animation:pulse 5s ease-in-out infinite;
+
+}
+
+/* PHOTO */
+
+.reader-photo {
+
 position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-opacity:0.9;
-
-}
-
-
-/* Your photo */
-
-.reader-photo{
-
-position:relative;
 width:260px;
+height:260px;
+top:45px;
+left:45px;
 border-radius:50%;
-z-index:2;
-margin-top:20px;
+object-fit:cover;
 
 }
 
+/* SPARKLE FIELD */
 
-.bio{
+.sparkles {
 
-max-width:700px;
-margin:auto;
-
-}
-
-
-.services{
-
-padding:80px 20px;
+position:absolute;
+width:100%;
+height:100%;
+pointer-events:none;
 
 }
 
+.sparkle {
 
-.service-box{
+position:absolute;
+width:6px;
+height:6px;
+border-radius:50%;
 
-border:3px solid #7fe0d6;
+background:#a855f7;
+
+box-shadow:
+
+0 0 6px #a855f7,
+0 0 10px #22d3ee;
+
+animation:twinkle 3s infinite;
+
+}
+
+/* RANDOM POSITIONS */
+
+.s1{top:10%;left:40%;}
+.s2{top:20%;left:80%;}
+.s3{top:30%;left:10%;}
+.s4{top:60%;left:90%;}
+.s5{top:80%;left:30%;}
+.s6{top:50%;left:60%;}
+.s7{top:75%;left:70%;}
+.s8{top:15%;left:55%;}
+.s9{top:40%;left:20%;}
+.s10{top:65%;left:45%;}
+
+/* SERVICES */
+
+.services {
+
+padding:60px 20px;
+
+}
+
+.service {
+
+margin:25px auto;
+max-width:500px;
+
+}
+
+/* ANIMATIONS */
+
+@keyframes spin {
+
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+
+}
+
+@keyframes pulse {
+
+0%{transform:scale(1);opacity:.8;}
+50%{transform:scale(1.05);opacity:1;}
+100%{transform:scale(1);opacity:.8;}
+
+}
+
+@keyframes twinkle {
+
+0%{opacity:0;transform:scale(.5);}
+50%{opacity:1;transform:scale(1.4);}
+100%{opacity:0;transform:scale(.5);}
+
+}
+
+footer {
+
 padding:40px;
-margin:50px auto;
-max-width:700px;
-
-}
-
-
-h4{
-
-color:#1fd1c2;
 
 }
