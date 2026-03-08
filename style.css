@@ -7,19 +7,21 @@ body {
     margin: 0;
     padding: 0;
 
-    text-align: center;
-
     background: linear-gradient(
-        to bottom,
+        180deg,
         #7b5ac9,
-        #6f4ec0,
+        #7a5ac7,
         #7b5ac9
     );
 
     font-family: Arial, sans-serif;
+
     color: black;
 
+    text-align: center;
+
 }
+
 
 
 /* =========================
@@ -32,20 +34,99 @@ h1 {
 
     font-size: 64px;
 
+    color: white;
+
     margin-top: 40px;
     margin-bottom: 20px;
-
-    color: #37ffd8;
-
-    text-shadow:
-        0 0 6px #37ffd8,
-        0 0 12px #37ffd8;
 
 }
 
 
+
 /* =========================
-   Service List
+   Section Headers
+   ========================= */
+
+h2 {
+
+    font-family: 'Fleur De Leah', cursive;
+
+    font-size: 48px;
+
+    color: white;
+
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+}
+
+
+
+/* =========================
+   Sub Headers
+   ========================= */
+
+h3 {
+
+    font-family: 'Fleur De Leah', cursive;
+
+    font-size: 32px;
+
+    color: white;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+
+
+/* =========================
+   Paragraph Text
+   ========================= */
+
+p {
+
+    max-width: 700px;
+
+    margin: 15px auto;
+
+    padding: 0 20px;
+
+    line-height: 1.6;
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================
+   Services List
+   ========================= */
+
+.services {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 30px 0;
+
+}
+
+.services li {
+
+    font-size: 22px;
+
+    margin: 16px 0;
+
+}
+
+
+
+/* =========================
+   General Lists
    ========================= */
 
 ul {
@@ -53,72 +134,42 @@ ul {
     list-style: none;
 
     padding: 0;
-    margin: 30px 0;
 
 }
 
 ul li {
 
-    font-size: 22px;
+    margin: 12px 0;
 
-    margin: 18px 0;
+    font-size: 20px;
 
 }
 
 
+
 /* =========================
-   Divider Line
+   Divider
    ========================= */
 
-hr {
+.divider {
 
     width: 70%;
-
-    border: none;
 
     height: 4px;
 
     margin: 50px auto;
 
-    background: #7ee8d6;
-
     border-radius: 10px;
 
-}
-
-
-/* =========================
-   Section Titles
-   ========================= */
-
-h2 {
-
-    font-family: 'Fleur De Leah', cursive;
-
-    font-size: 56px;
-
-    margin-top: 40px;
-    margin-bottom: 30px;
-
-    color: #37ffd8;
-
-    text-shadow:
-        0 0 5px #37ffd8,
-        0 0 10px #37ffd8;
+    background: #8fead9;
 
 }
+
 
 
 /* =========================
    Reader Image
    ========================= */
-
-.reader-container {
-
-    display: flex;
-    justify-content: center;
-
-}
 
 .reader-image {
 
@@ -131,11 +182,23 @@ h2 {
 
     border: 6px solid #7ee8d6;
 
-    box-shadow:
-        0 0 12px #37ffd8,
-        0 0 24px #37ffd8;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
 }
+
+
+
+/* =========================
+   Section Spacing
+   ========================= */
+
+section {
+
+    padding-bottom: 20px;
+
+}
+
 
 
 /* =========================
@@ -146,24 +209,25 @@ h2 {
 
     h1 {
 
-        font-size: 52px;
-        margin-top: 30px;
+        font-size: 48px;
 
     }
 
     h2 {
 
-        font-size: 44px;
+        font-size: 36px;
 
     }
 
-    ul li {
+    h3 {
 
-        font-size: 20px;
+        font-size: 26px;
 
-        margin: 16px 0;
+    }
 
-        padding: 0 20px;
+    p {
+
+        font-size: 17px;
 
     }
 
