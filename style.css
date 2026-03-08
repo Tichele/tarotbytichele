@@ -1,241 +1,215 @@
 /* =========================
-   Global Page Styling
-   ========================= */
+   Page Styling
+========================= */
 
 body {
 
-    margin: 0;
-    padding: 0;
+margin:0;
+padding:0;
 
-    background: linear-gradient(
-        180deg,
-        #7b5ac9,
-        #7a5ac7,
-        #7b5ac9
-    );
+text-align:center;
 
-    font-family: Arial, sans-serif;
+font-family:Arial, sans-serif;
 
-    color: black;
+background:linear-gradient(
+180deg,
+#7b5ac9,
+#7a5ac7,
+#7b5ac9
+);
 
-    text-align: center;
+color:black;
 
 }
-
 
 
 /* =========================
-   Main Title
-   ========================= */
+   Main Header
+========================= */
 
-h1 {
+h1{
 
-    font-family: 'Fleur De Leah', cursive;
+font-family:'Fleur De Leah', cursive;
 
-    font-size: 64px;
+font-size:64px;
 
-    color: white;
+color:white;
 
-    margin-top: 40px;
-    margin-bottom: 20px;
+margin-top:40px;
+margin-bottom:20px;
+
+text-shadow:none;
 
 }
-
 
 
 /* =========================
    Section Headers
-   ========================= */
+========================= */
 
-h2 {
+h2{
 
-    font-family: 'Fleur De Leah', cursive;
+font-family:'Fleur De Leah', cursive;
 
-    font-size: 48px;
+font-size:48px;
 
-    color: white;
+color:white;
 
-    margin-top: 40px;
-    margin-bottom: 25px;
+margin-top:40px;
+margin-bottom:25px;
+
+text-shadow:none;
 
 }
-
 
 
 /* =========================
    Sub Headers
-   ========================= */
+========================= */
 
-h3 {
+h3{
 
-    font-family: 'Fleur De Leah', cursive;
+font-family:'Fleur De Leah', cursive;
 
-    font-size: 32px;
+font-size:30px;
 
-    color: white;
+color:white;
 
-    margin-top: 20px;
-    margin-bottom: 15px;
+margin-top:20px;
+margin-bottom:10px;
+
+text-shadow:none;
 
 }
-
 
 
 /* =========================
    Paragraph Text
-   ========================= */
+========================= */
 
-p {
+p{
 
-    max-width: 700px;
+max-width:700px;
 
-    margin: 15px auto;
+margin:15px auto;
 
-    padding: 0 20px;
+padding:0 20px;
 
-    line-height: 1.6;
+line-height:1.6;
 
-    font-size: 18px;
+font-size:18px;
 
 }
-
 
 
 /* =========================
    Services List
-   ========================= */
+========================= */
 
-.services {
+.services{
 
-    list-style: none;
+list-style:none;
 
-    padding: 0;
+padding:0;
 
-    margin: 30px 0;
-
-}
-
-.services li {
-
-    font-size: 22px;
-
-    margin: 16px 0;
+margin:30px 0;
 
 }
 
+.services li{
+
+font-size:22px;
+
+margin:16px 0;
+
+}
 
 
 /* =========================
-   General Lists
-   ========================= */
+   Lists
+========================= */
 
-ul {
+ul{
 
-    list-style: none;
+list-style:none;
 
-    padding: 0;
-
-}
-
-ul li {
-
-    margin: 12px 0;
-
-    font-size: 20px;
+padding:0;
 
 }
 
+ul li{
+
+font-size:20px;
+
+margin:10px 0;
+
+}
 
 
 /* =========================
    Divider
-   ========================= */
+========================= */
 
-.divider {
+.divider{
 
-    width: 70%;
+width:70%;
 
-    height: 4px;
+height:4px;
 
-    margin: 50px auto;
+margin:50px auto;
 
-    border-radius: 10px;
+border-radius:10px;
 
-    background: #8fead9;
+background:#8fead9;
 
 }
-
 
 
 /* =========================
    Reader Image
-   ========================= */
+========================= */
 
-.reader-image {
+.reader-image{
 
-    width: 280px;
-    height: 280px;
+width:280px;
+height:280px;
 
-    object-fit: cover;
+object-fit:cover;
 
-    border-radius: 50%;
+border-radius:50%;
 
-    border: 6px solid #7ee8d6;
+border:6px solid #7ee8d6;
 
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-}
-
-
-
-/* =========================
-   Section Spacing
-   ========================= */
-
-section {
-
-    padding-bottom: 20px;
+margin-top:20px;
 
 }
-
 
 
 /* =========================
    Mobile Optimization
-   ========================= */
+========================= */
 
-@media (max-width: 600px) {
+@media (max-width:600px){
 
-    h1 {
+h1{
+font-size:48px;
+}
 
-        font-size: 48px;
+h2{
+font-size:36px;
+}
 
-    }
+h3{
+font-size:24px;
+}
 
-    h2 {
+p{
+font-size:17px;
+}
 
-        font-size: 36px;
-
-    }
-
-    h3 {
-
-        font-size: 26px;
-
-    }
-
-    p {
-
-        font-size: 17px;
-
-    }
-
-    .reader-image {
-
-        width: 220px;
-        height: 220px;
-
-    }
+.reader-image{
+width:220px;
+height:220px;
+}
 
 }
