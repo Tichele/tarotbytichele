@@ -1,6 +1,8 @@
-/* ---------------- GLOBAL ---------------- */
+/* ========================================
+GLOBAL PAGE STYLING
+======================================== */
 
-body{
+body {
 
 margin:0;
 padding:0;
@@ -14,78 +16,113 @@ background:linear-gradient(
 #6b50b6
 );
 
-text-align:center;
-line-height:1.7;
 color:black;
+
+text-align:center;
+
+line-height:1.7;
 
 }
 
-/* ---------------- LAYOUT ---------------- */
 
-section{
+/* ========================================
+PAGE STRUCTURE
+======================================== */
+
+section {
 
 max-width:700px;
+
 margin:auto;
+
 padding:40px 20px;
 
 }
 
-/* ---------------- HEADERS ---------------- */
 
-h1,h2,h3{
+/* ========================================
+HEADERS
+======================================== */
+
+h1,
+h2,
+h3 {
 
 font-family:'Quintessential', serif;
+
 font-weight:normal;
+
 color:white;
+
 margin-bottom:20px;
 
 }
 
-/* decorative letters */
 
-.fancy{
+/* Decorative capital letters */
+
+.fancy {
 
 font-family:'Fleur De Leah', cursive;
+
 font-size:1.5em;
+
 margin-right:3px;
 
 }
 
-/* ---------------- SERVICES ---------------- */
 
-.services{
+/* ========================================
+SERVICES LIST
+======================================== */
+
+.services {
 
 font-size:22px;
+
 line-height:2;
 
 }
 
-/* ---------------- TEXT ---------------- */
 
-p{
+/* ========================================
+TEXT
+======================================== */
+
+p {
 
 font-size:18px;
+
 margin-bottom:15px;
 
 }
 
-ul{
+
+ul {
 
 list-style:none;
+
 padding:0;
+
 font-size:20px;
+
 line-height:1.8;
 
 }
 
-/* ---------------- IMAGE ---------------- */
 
-.reader-img{
+/* ========================================
+READER IMAGE
+======================================== */
+
+.reader-img {
 
 width:260px;
+
 height:260px;
 
 border-radius:50%;
+
 object-fit:cover;
 
 border:8px solid #7be3cf;
@@ -99,11 +136,15 @@ margin-top:20px;
 
 }
 
-/* ---------------- DIVIDER ---------------- */
 
-.divider{
+/* ========================================
+DIVIDER
+======================================== */
+
+.divider {
 
 width:70%;
+
 height:6px;
 
 margin:50px auto;
@@ -118,16 +159,29 @@ box-shadow:
 
 }
 
-/* ---------------- MOBILE ---------------- */
 
-@media (max-width:600px){
+/* ========================================
+MOBILE OPTIMIZATION
+======================================== */
 
-h1{font-size:38px;}
-h2{font-size:30px;}
+@media (max-width:600px) {
 
-.reader-img{
+h1 {
+
+font-size:38px;
+
+}
+
+h2 {
+
+font-size:30px;
+
+}
+
+.reader-img {
 
 width:220px;
+
 height:220px;
 
 }
