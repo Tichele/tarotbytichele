@@ -7,135 +7,98 @@
 <title>Tarot By Tichele</title>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Quintessential&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================
-   GLOBAL STYLES
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+/* ---------------- GLOBAL ---------------- */
 
 body{
-    font-family: 'Cormorant Garamond', serif;
-    background: linear-gradient(
-        to bottom,
-        #4d2e83 0%,
-        #6b54b4 50%,
-        #7c67c5 100%
-    );
-    color:#ffffff;
-    text-align:center;
-    line-height:1.6;
-    padding:40px 20px;
+margin:0;
+padding:0;
+font-family:'Quintessential', serif;
+background:linear-gradient(180deg,#6b50b6,#7a63c8,#6b50b6);
+color:black;
+text-align:center;
+line-height:1.7;
 }
 
-/* =========================
-   HEADER
-========================= */
-
-.site-title{
-    font-family: 'Cinzel', serif;
-    font-size:2.8rem;
-    font-weight:400;
-    margin-bottom:30px;
-    letter-spacing:1px;
+section{
+padding:40px 20px;
+max-width:700px;
+margin:auto;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* ---------------- HEADERS ---------------- */
+
+h1,h2,h3{
+font-family:'Quintessential', serif;
+color:white;
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.fancy{
+font-family:'Fleur De Leah', cursive;
+font-size:1.4em;
+margin-right:3px;
+}
+
+/* ---------------- SERVICES ---------------- */
 
 .services{
-    font-size:1.6rem;
-    margin-bottom:50px;
+font-size:22px;
+line-height:2;
 }
 
-.services p{
-    margin:12px 0;
-}
-
-/* =========================
-   DIVIDER
-========================= */
+/* ---------------- DIVIDER ---------------- */
 
 .divider{
-    width:80%;
-    height:6px;
-    margin:40px auto;
-    border-radius:10px;
-
-    background:#7be3cf;
-
-    box-shadow:
-        0 0 10px #7be3cf,
-        0 0 25px #7be3cf,
-        0 0 40px #7be3cf;
+width:70%;
+height:6px;
+margin:40px auto;
+border-radius:10px;
+background:#7be3cf;
+box-shadow:0 0 10px #7be3cf,0 0 25px #7be3cf;
 }
 
-/* =========================
-   READER SECTION
-========================= */
+/* ---------------- IMAGE ---------------- */
 
-.reader-title{
-    font-family:'Cinzel', serif;
-    font-size:2rem;
-    margin-bottom:40px;
+.reader-img{
+width:260px;
+height:260px;
+border-radius:50%;
+border:8px solid #7be3cf;
+box-shadow:0 0 25px #7be3cf,0 0 50px #7be3cf;
+object-fit:cover;
 }
 
-/* =========================
-   PROFILE IMAGE
-========================= */
+/* ---------------- TEXT ---------------- */
 
-.reader-image-wrapper{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+p{
+font-size:18px;
+margin-bottom:15px;
 }
 
-.reader-image{
-
-    width:260px;
-    height:260px;
-
-    border-radius:50%;
-    object-fit:cover;
-
-    border:10px solid #7be3cf;
-
-    box-shadow:
-        0 0 25px rgba(123,227,207,0.8),
-        0 0 60px rgba(123,227,207,0.6),
-        0 0 100px rgba(123,227,207,0.5);
+ul{
+list-style:none;
+padding:0;
+font-size:20px;
+line-height:1.8;
 }
 
-/* =========================
-   MOBILE OPTIMIZATION
-========================= */
+/* ---------------- MOBILE ---------------- */
 
 @media (max-width:600px){
 
-    .site-title{
-        font-size:2.3rem;
-    }
+h1{font-size:38px;}
+h2{font-size:32px;}
+p{font-size:17px;}
 
-    .services{
-        font-size:1.4rem;
-    }
-
-    .reader-title{
-        font-size:1.7rem;
-    }
-
-    .reader-image{
-        width:220px;
-        height:220px;
-    }
+.reader-img{
+width:220px;
+height:220px;
+}
 
 }
 
@@ -144,60 +107,186 @@ body{
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
-<h1 class="site-title">Tarot By Tichele</h1>
-
-
-<!-- =========================
-     SERVICES
-========================= -->
-
-<section class="services">
-
-<p>✨ Tarot Reading ✨</p>
-
-<p>✨ Protection Jars ✨</p>
-
-<p>✨ Natural Art ✨</p>
-
-<p>✨ Home Cleansing / Blessing ✨</p>
-
-<p>✨ Intention Candles ✨</p>
-
-<p>✨ Intention Satchets ✨</p>
-
-</section>
-
-
-<!-- =========================
-     DIVIDER
-========================= -->
-
-<div class="divider"></div>
-
-
-<!-- =========================
-     MEET YOUR READER
-========================= -->
+<!-- HEADER -->
 
 <section>
 
-<h2 class="reader-title">Meet Your Reader</h2>
+<h1>
+<span class="fancy">T</span>arot
+<span class="fancy">B</span>y
+<span class="fancy">T</span>ichele
+</h1>
 
-<div class="reader-image-wrapper">
+<div class="services">
 
-<img
-class="reader-image"
-src="reader.jpg"
-alt="Tarot Reader">
+✨ Tarot Reading ✨<br>
+✨ Protection Jars ✨<br>
+✨ Natural Art ✨<br>
+✨ Home Cleansing/Blessing ✨<br>
+✨ Intention Candles ✨<br>
+✨ Intention Satchets ✨
 
 </div>
 
 </section>
 
+<div class="divider"></div>
+
+<!-- MEET YOUR READER -->
+
+<section>
+
+<h2>
+<span class="fancy">M</span>eet
+<span class="fancy">Y</span>our
+<span class="fancy">R</span>eader
+</h2>
+
+<img src="tichele.jpg" class="reader-img">
+
+<p>
+Hi! I'm Tichele, creator and founder of Tarot By Tichele! I have been reading tarot cards for over 20 years and have been practicing my magic for many years as well.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- TAROT READINGS -->
+
+<section>
+
+<h2>
+<span class="fancy">T</span>arot
+<span class="fancy">C</span>ard
+<span class="fancy">R</span>eadings
+</h2>
+
+<p>
+What is tarot? According to Merriam-Webster tarot is: any of a set of 78 playing cards including 22 pictorial cards used for fortune-telling.
+</p>
+
+<p>
+While this is the most basic definition out there, tarot to me is so much more. Reading tarot cards is a form of magic, with a little psychology sprinkled in.
+</p>
+
+<h3><span class="fancy">P</span>ricing</h3>
+
+<ul>
+<li>✨ Single Card Pull: $5</li>
+<li>✨ Three Card Pull: $10</li>
+<li>✨ Five Card Pull: $15</li>
+<li>✨ Seven Card Pull: $20</li>
+</ul>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- NATURAL ART -->
+
+<section>
+
+<h2>
+<span class="fancy">N</span>atural
+<span class="fancy">A</span>rt
+</h2>
+
+<p>
+Natural Art is my way of honoring an animal. My supplies are naturally and ethically sourced, either gifts from nature or clients.
+</p>
+
+<p>
+Delivery/Pickup available to these areas:
+</p>
+
+<p>
+Fife Lake<br>
+Kalkaska<br>
+Traverse City
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- HOME CLEANSING -->
+
+<section>
+
+<h2>
+<span class="fancy">H</span>ome
+<span class="fancy">C</span>leansing
+<span class="fancy">&</span>
+<span class="fancy">B</span>lessing
+</h2>
+
+<p>
+Do you feel stagnant energy in your home? I offer Home Cleansing and Blessing services.
+</p>
+
+<p>
+Home Cleansing removes negative or stagnant energy using herbal smoke and other spiritual methods.
+</p>
+
+<p>
+Once the energy is removed, a blessing introduces the desired spiritual energy into the space.
+</p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- INTENTION CANDLES -->
+
+<section>
+
+<h2>
+<span class="fancy">I</span>ntention
+<span class="fancy">C</span>andles
+</h2>
+
+<p>
+Intention candles are crafted with herbs, crystals, scents, and colors to achieve specific spiritual goals.
+</p>
+
+<p><strong>CANDLES MUST BE SUPERVISED WHILE BURNING!!!!!</strong></p>
+
+<ul>
+<li>❤️ Self Love</li>
+<li>❤️ Relationship Development</li>
+<li>🍀 Good Luck</li>
+<li>🧿 Protection</li>
+<li>🔮 Divination</li>
+<li>💸 Abundance</li>
+</ul>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- INTENTION SATCHETS -->
+
+<section>
+
+<h2>
+<span class="fancy">I</span>ntention
+<span class="fancy">S</span>atchets
+</h2>
+
+<p>
+Intention Satchets are small bags filled with herbs and crystals for a specific intent.
+</p>
+
+<ul>
+<li>🍀 Luck</li>
+<li>🧿 Protection</li>
+<li>❤️ Self Love</li>
+<li>❤️ Relationship Development</li>
+<li>💸 Abundance</li>
+</ul>
+
+</section>
 
 </body>
 </html>
