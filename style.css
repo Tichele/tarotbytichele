@@ -227,3 +227,12 @@ margin-top: 20px;
 margin-bottom: 15px;
 
 }
+/* Special headings that use Quintessential font */
+
+h3.special-heading {
+
+font-family: 'Quintessential', cursive !important;
+
+font-size: 30px;
+
+color: white
