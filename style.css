@@ -46,54 +46,58 @@ height:6px;
 margin:40px auto;
 border-radius:10px;
 background:#7be3cf;
+
 box-shadow:
 0 0 10px #7be3cf,
 0 0 25px #7be3cf;
 }
 
-/* ---------------- READER IMAGE ---------------- */
+/* ---------------- IMAGE ---------------- */
 
 .reader-img{
-
 display:block;
-margin:40px auto;
-
+margin:40px auto 10px auto;
 max-width:420px;
 width:90%;
 height:auto;
 
-/* mystical glow */
-
 box-shadow:
 0 0 25px rgba(123,227,207,.7),
 0 0 60px rgba(123,227,207,.4);
+}
 
-/* subtle aura animation */
+/* ---------------- READER NAME ---------------- */
 
-animation:auraGlow 6s ease-in-out infinite alternate;
+.reader-name{
+
+font-size:42px;
+color:white;
+
+margin-top:15px;
+margin-bottom:25px;
+
+/* magical glow */
+
+text-shadow:
+0 0 8px rgba(123,227,207,.9),
+0 0 18px rgba(123,227,207,.6),
+0 0 30px rgba(123,227,207,.4);
 
 }
 
-/* ---------------- AURA ANIMATION ---------------- */
+/* Script capital T */
 
-@keyframes auraGlow{
-
-0%{
-
-box-shadow:
-0 0 20px rgba(123,227,207,.5),
-0 0 40px rgba(123,227,207,.3);
-
+.reader-name .cap{
+font-family:'Fleur De Leah', cursive;
+font-size:1.2em;
+margin-right:2px;
 }
 
-100%{
+/* Quintessential remainder */
 
-box-shadow:
-0 0 40px rgba(123,227,207,.8),
-0 0 80px rgba(123,227,207,.5);
-
-}
-
+.reader-name .rest{
+font-family:'Quintessential', serif;
+letter-spacing:1px;
 }
 
 /* ---------------- TEXT ---------------- */
@@ -114,20 +118,16 @@ line-height:1.8;
 
 @media (max-width:600px){
 
-h1{
-font-size:38px;
-}
-
-h2{
-font-size:32px;
-}
-
-p{
-font-size:17px;
-}
+h1{font-size:38px;}
+h2{font-size:32px;}
+p{font-size:17px;}
 
 .reader-img{
 max-width:320px;
+}
+
+.reader-name{
+font-size:36px;
 }
 
 }
