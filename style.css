@@ -1,257 +1,136 @@
-/* =========================
-   GLOBAL PAGE STYLING
-========================= */
+/* ===============================
+   GOOGLE FONT FALLBACKS
+   =============================== */
 
-body {
-
-margin: 0;
-padding: 0;
-
-font-family: Arial, sans-serif;
-
-background: linear-gradient(
-180deg,
-#7a5bc1,
-#6a4fb3
-);
-
-color: black;
-text-align: center;
-
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family: 'Quintessential', serif;
+    color:#000;
+    background:linear-gradient(
+        180deg,
+        #6a4fb5,
+        #7a61c4,
+        #6a4fb5
+    );
 }
 
 
-
-/* =========================
-   SECTION LAYOUT
-========================= */
-
-section {
-
-padding: 40px 20px;
-max-width: 900px;
-margin: auto;
-
-}
-
-
-
-/* =========================
+/* ===============================
    HEADERS
-========================= */
+   =============================== */
 
-h1,
-h2,
-h3 {
+h1, h2, h3{
+    font-family:'Quintessential', serif;
+    font-weight:normal;
+    color:white;
+    margin-top:40px;
+}
 
-font-family: 'Quintessential', cursive;
+/* Decorative first letters */
 
-color: white;
-
-text-align: center;
-
-margin-top: 20px;
-margin-bottom: 20px;
-
+.fancy{
+    font-family:'Fleur De Leah', cursive;
+    font-size:1.3em;
+    margin-right:2px;
 }
 
 
+/* ===============================
+   SERVICES LIST
+   =============================== */
 
-/* Decorative first letter */
-
-h1::first-letter,
-h2::first-letter,
-h3::first-letter {
-
-font-family: 'Fleur De Leah', cursive;
-
-font-size: 1.7em;
-
-margin-right: 3px;
-
+.services{
+    list-style:none;
+    padding:0;
+    font-size:22px;
+    line-height:1.9;
 }
 
 
+/* ===============================
+   SECTION TEXT
+   =============================== */
 
-/* =========================
-   SITE TITLE
-========================= */
-
-h1 {
-
-font-size: 60px;
-
+p{
+    max-width:650px;
+    margin:auto;
+    line-height:1.7;
+    font-size:18px;
+    padding:10px 20px;
 }
 
 
+/* ===============================
+   DIVIDERS
+   =============================== */
 
-/* =========================
-   SUB HEADERS
-========================= */
+.divider{
+    width:70%;
+    height:6px;
+    margin:50px auto;
+    border-radius:10px;
 
-h2 {
+    background:#8be3d0;
 
-font-size: 40px;
-
+    box-shadow:
+        0 0 12px #8be3d0,
+        0 0 25px #8be3d0;
 }
 
 
+/* ===============================
+   READER IMAGE
+   =============================== */
 
-h3 {
+.reader-image{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    margin-top:30px;
 
-font-size: 28px;
+    border:8px solid #8be3d0;
 
+    box-shadow:
+        0 0 25px #8be3d0,
+        0 0 45px #8be3d0;
 }
 
 
+/* ===============================
+   LISTS
+   =============================== */
 
-/* =========================
-   PARAGRAPHS
-========================= */
-
-p {
-
-font-size: 18px;
-
-line-height: 1.6;
-
-margin: 15px 0;
-
+ul{
+    list-style:none;
+    padding:0;
+    font-size:20px;
+    line-height:1.8;
 }
 
 
-
-/* =========================
-   SERVICE LIST
-========================= */
-
-.services {
-
-list-style: none;
-
-padding: 0;
-
-margin-top: 30px;
-
-font-size: 24px;
-
-}
-
-
-
-.services li {
-
-margin: 12px 0;
-
-}
-
-
-
-/* =========================
-   STANDARD LISTS
-========================= */
-
-ul {
-
-list-style: none;
-
-padding: 0;
-
-}
-
-
-
-ul li {
-
-margin: 10px 0;
-
-font-size: 20px;
-
-}
-
-
-
-/* =========================
-   DIVIDER LINE
-========================= */
-
-.divider {
-
-width: 70%;
-
-height: 6px;
-
-margin: 40px auto;
-
-border-radius: 10px;
-
-background: linear-gradient(
-90deg,
-#7ce3cf,
-#6ed2c0
-);
-
-}
-
-
-
-/* =========================
-   PROFILE IMAGE
-========================= */
-
-.reader-image {
-
-width: 250px;
-
-max-width: 80%;
-
-border-radius: 50%;
-
-border: 8px solid #7ce3cf;
-
-box-shadow:
-0 0 25px rgba(124, 227, 207, 0.9);
-
-margin: 25px 0;
-
-}
-
-
-
-/* =========================
-   MOBILE OPTIMIZATION
-========================= */
-
-@media (max-width: 600px) {
-
-h1 {
-
-font-size: 48px;
-
-}
-
-h2 {
-
-font-size: 32px;
-
-}
-
-h3 {
-
-font-size: 24px;
-
-}
-
-p {
-
-font-size: 17px;
-
-}
-
-.services {
-
-font-size: 22px;
-
-}
+/* ===============================
+   MOBILE IMPROVEMENTS
+   =============================== */
+
+@media (max-width:600px){
+
+    h1{
+        font-size:40px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    p{
+        font-size:17px;
+    }
+
+    .reader-image{
+        width:220px;
+        height:220px;
+    }
 
 }
