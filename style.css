@@ -236,3 +236,27 @@ font-family: 'Quintessential', cursive !important;
 font-size: 30px;
 
 color: white
+/* Base header font */
+
+h1, h2, h3 {
+
+font-family: 'Quintessential', cursive;
+color: white;
+text-align: center;
+
+}
+
+
+/* Drop cap first letter styling */
+
+h1::first-letter,
+h2::first-letter,
+h3::first-letter {
+
+font-family: 'Fleur De Leah', cursive;
+
+font-size: 1.6em;
+
+margin-right: 3px;
+
+}
