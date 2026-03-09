@@ -260,3 +260,29 @@ font-size: 1.6em;
 margin-right: 3px;
 
 }
+/* Header base font */
+
+h1,
+h2,
+h3 {
+
+font-family: 'Quintessential', cursive !important;
+color: white;
+text-align: center;
+
+}
+
+
+/* Drop cap first letter */
+
+h1::first-letter,
+h2::first-letter,
+h3::first-letter {
+
+font-family: 'Fleur De Leah', cursive !important;
+
+font-size: 1.7em;
+
+margin-right: 3px;
+
+}
