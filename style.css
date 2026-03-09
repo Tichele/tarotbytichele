@@ -1,136 +1,135 @@
-/* ===============================
-   GOOGLE FONT FALLBACKS
-   =============================== */
+/* ---------------- GLOBAL ---------------- */
 
 body{
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-family: 'Quintessential', serif;
-    color:#000;
-    background:linear-gradient(
-        180deg,
-        #6a4fb5,
-        #7a61c4,
-        #6a4fb5
-    );
+
+margin:0;
+padding:0;
+
+font-family:'Quintessential', serif;
+
+background:linear-gradient(
+180deg,
+#6b50b6,
+#7a63c8,
+#6b50b6
+);
+
+text-align:center;
+line-height:1.7;
+color:black;
+
 }
 
+/* ---------------- LAYOUT ---------------- */
 
-/* ===============================
-   HEADERS
-   =============================== */
+section{
 
-h1, h2, h3{
-    font-family:'Quintessential', serif;
-    font-weight:normal;
-    color:white;
-    margin-top:40px;
+max-width:700px;
+margin:auto;
+padding:40px 20px;
+
 }
 
-/* Decorative first letters */
+/* ---------------- HEADERS ---------------- */
+
+h1,h2,h3{
+
+font-family:'Quintessential', serif;
+font-weight:normal;
+color:white;
+margin-bottom:20px;
+
+}
+
+/* decorative letters */
 
 .fancy{
-    font-family:'Fleur De Leah', cursive;
-    font-size:1.3em;
-    margin-right:2px;
+
+font-family:'Fleur De Leah', cursive;
+font-size:1.5em;
+margin-right:3px;
+
 }
 
-
-/* ===============================
-   SERVICES LIST
-   =============================== */
+/* ---------------- SERVICES ---------------- */
 
 .services{
-    list-style:none;
-    padding:0;
-    font-size:22px;
-    line-height:1.9;
+
+font-size:22px;
+line-height:2;
+
 }
 
-
-/* ===============================
-   SECTION TEXT
-   =============================== */
+/* ---------------- TEXT ---------------- */
 
 p{
-    max-width:650px;
-    margin:auto;
-    line-height:1.7;
-    font-size:18px;
-    padding:10px 20px;
+
+font-size:18px;
+margin-bottom:15px;
+
 }
-
-
-/* ===============================
-   DIVIDERS
-   =============================== */
-
-.divider{
-    width:70%;
-    height:6px;
-    margin:50px auto;
-    border-radius:10px;
-
-    background:#8be3d0;
-
-    box-shadow:
-        0 0 12px #8be3d0,
-        0 0 25px #8be3d0;
-}
-
-
-/* ===============================
-   READER IMAGE
-   =============================== */
-
-.reader-image{
-    width:260px;
-    height:260px;
-    border-radius:50%;
-    margin-top:30px;
-
-    border:8px solid #8be3d0;
-
-    box-shadow:
-        0 0 25px #8be3d0,
-        0 0 45px #8be3d0;
-}
-
-
-/* ===============================
-   LISTS
-   =============================== */
 
 ul{
-    list-style:none;
-    padding:0;
-    font-size:20px;
-    line-height:1.8;
+
+list-style:none;
+padding:0;
+font-size:20px;
+line-height:1.8;
+
 }
 
+/* ---------------- IMAGE ---------------- */
 
-/* ===============================
-   MOBILE IMPROVEMENTS
-   =============================== */
+.reader-img{
+
+width:260px;
+height:260px;
+
+border-radius:50%;
+object-fit:cover;
+
+border:8px solid #7be3cf;
+
+box-shadow:
+0 0 25px #7be3cf,
+0 0 45px #7be3cf,
+0 0 70px #7be3cf;
+
+margin-top:20px;
+
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.divider{
+
+width:70%;
+height:6px;
+
+margin:50px auto;
+
+border-radius:10px;
+
+background:#7be3cf;
+
+box-shadow:
+0 0 10px #7be3cf,
+0 0 25px #7be3cf;
+
+}
+
+/* ---------------- MOBILE ---------------- */
 
 @media (max-width:600px){
 
-    h1{
-        font-size:40px;
-    }
+h1{font-size:38px;}
+h2{font-size:30px;}
 
-    h2{
-        font-size:32px;
-    }
+.reader-img{
 
-    p{
-        font-size:17px;
-    }
+width:220px;
+height:220px;
 
-    .reader-image{
-        width:220px;
-        height:220px;
-    }
+}
 
 }
