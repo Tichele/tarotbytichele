@@ -213,3 +213,17 @@ height:220px;
 }
 
 }
+/* Special headings that use Quintessential font */
+
+.special-heading {
+
+font-family: 'Quintessential', cursive;
+
+font-size: 30px;
+
+color: white;
+
+margin-top: 20px;
+margin-bottom: 15px;
+
+}
