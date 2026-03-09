@@ -29,9 +29,9 @@ line-height:1.7;
 PAGE STRUCTURE
 ======================================== */
 
-section {
+section{
 
-max-width:700px;
+max-width:720px;
 
 margin:auto;
 
@@ -46,7 +46,7 @@ HEADERS
 
 h1,
 h2,
-h3 {
+h3{
 
 font-family:'Quintessential', serif;
 
@@ -59,15 +59,18 @@ margin-bottom:20px;
 }
 
 
-/* Decorative capital letters */
+/* ========================================
+DROP CAP DECORATIVE LETTER
+======================================== */
 
-.fancy {
+h2::first-letter,
+.special-heading::first-letter{
 
 font-family:'Fleur De Leah', cursive;
 
-font-size:1.5em;
+font-size:1.8em;
 
-margin-right:3px;
+margin-right:4px;
 
 }
 
@@ -76,7 +79,7 @@ margin-right:3px;
 SERVICES LIST
 ======================================== */
 
-.services {
+.services{
 
 font-size:22px;
 
@@ -89,7 +92,7 @@ line-height:2;
 TEXT
 ======================================== */
 
-p {
+p{
 
 font-size:18px;
 
@@ -98,7 +101,7 @@ margin-bottom:15px;
 }
 
 
-ul {
+ul{
 
 list-style:none;
 
@@ -115,7 +118,7 @@ line-height:1.8;
 READER IMAGE
 ======================================== */
 
-.reader-img {
+.reader-image{
 
 width:260px;
 
@@ -128,8 +131,9 @@ object-fit:cover;
 border:8px solid #7be3cf;
 
 box-shadow:
-0 0 25px #7be3cf,
-0 0 45px #7be3cf,
+
+0 0 20px #7be3cf,
+0 0 40px #7be3cf,
 0 0 70px #7be3cf;
 
 margin-top:20px;
@@ -141,7 +145,7 @@ margin-top:20px;
 DIVIDER
 ======================================== */
 
-.divider {
+.divider{
 
 width:70%;
 
@@ -154,6 +158,7 @@ border-radius:10px;
 background:#7be3cf;
 
 box-shadow:
+
 0 0 10px #7be3cf,
 0 0 25px #7be3cf;
 
@@ -164,24 +169,23 @@ box-shadow:
 MOBILE OPTIMIZATION
 ======================================== */
 
-@media (max-width:600px) {
+@media (max-width:600px){
 
-h1 {
+h1{
 
 font-size:38px;
 
 }
 
-h2 {
+h2{
 
 font-size:30px;
 
 }
 
-.reader-img {
+.reader-image{
 
 width:220px;
-
 height:220px;
 
 }
