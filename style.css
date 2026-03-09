@@ -1,253 +1,63 @@
 /* =========================
-   Page Styling
+   GLOBAL PAGE STYLING
 ========================= */
 
 body {
 
-margin:0;
-padding:0;
+margin: 0;
+padding: 0;
 
-text-align:center;
+font-family: Arial, sans-serif;
 
-font-family:Arial, sans-serif;
-
-background:linear-gradient(
+background: linear-gradient(
 180deg,
-#7b5ac9,
-#7a5ac7,
-#7b5ac9
+#7a5bc1,
+#6a4fb3
 );
 
-color:black;
-
-}
-
-
-/* =========================
-   Main Header
-========================= */
-
-h1{
-
-font-family:'Fleur De Leah', cursive;
-
-font-size:64px;
-
-color:white;
-
-margin-top:40px;
-margin-bottom:20px;
-
-text-shadow:none;
-
-}
-
-
-/* =========================
-   Section Headers
-========================= */
-
-h2{
-
-font-family:'Fleur De Leah', cursive;
-
-font-size:48px;
-
-color:white;
-
-margin-top:40px;
-margin-bottom:25px;
-
-text-shadow:none;
-
-}
-
-
-/* =========================
-   Sub Headers
-========================= */
-
-h3{
-
-font-family:'Fleur De Leah', cursive;
-
-font-size:30px;
-
-color:white;
-
-margin-top:20px;
-margin-bottom:10px;
-
-text-shadow:none;
-
-}
-
-
-/* =========================
-   Paragraph Text
-========================= */
-
-p{
-
-max-width:700px;
-
-margin:15px auto;
-
-padding:0 20px;
-
-line-height:1.6;
-
-font-size:18px;
-
-}
-
-
-/* =========================
-   Services List
-========================= */
-
-.services{
-
-list-style:none;
-
-padding:0;
-
-margin:30px 0;
-
-}
-
-.services li{
-
-font-size:22px;
-
-margin:16px 0;
-
-}
-
-
-/* =========================
-   Lists
-========================= */
-
-ul{
-
-list-style:none;
-
-padding:0;
-
-}
-
-ul li{
-
-font-size:20px;
-
-margin:10px 0;
-
-}
-
-
-/* =========================
-   Divider
-========================= */
-
-.divider{
-
-width:70%;
-
-height:4px;
-
-margin:50px auto;
-
-border-radius:10px;
-
-background:#8fead9;
-
-}
-
-
-/* =========================
-   Reader Image
-========================= */
-
-.reader-image{
-
-width:280px;
-height:280px;
-
-object-fit:cover;
-
-border-radius:50%;
-
-border:6px solid #7ee8d6;
-
-margin-top:20px;
-
-}
-
-
-/* =========================
-   Mobile Optimization
-========================= */
-
-@media (max-width:600px){
-
-h1{
-font-size:48px;
-}
-
-h2{
-font-size:36px;
-}
-
-h3{
-font-size:24px;
-}
-
-p{
-font-size:17px;
-}
-
-.reader-image{
-width:220px;
-height:220px;
-}
-
-}
-/* Special headings that use Quintessential font */
-
-.special-heading {
-
-font-family: 'Quintessential', cursive;
-
-font-size: 30px;
-
-color: white;
-
-margin-top: 20px;
-margin-bottom: 15px;
-
-}
-/* Special headings that use Quintessential font */
-
-h3.special-heading {
-
-font-family: 'Quintessential', cursive !important;
-
-font-size: 30px;
-
-color: white
-/* Base header font */
-
-h1, h2, h3 {
-
-font-family: 'Quintessential', cursive;
-color: white;
+color: black;
 text-align: center;
 
 }
 
 
-/* Drop cap first letter styling */
+
+/* =========================
+   SECTION LAYOUT
+========================= */
+
+section {
+
+padding: 40px 20px;
+max-width: 900px;
+margin: auto;
+
+}
+
+
+
+/* =========================
+   HEADERS
+========================= */
+
+h1,
+h2,
+h3 {
+
+font-family: 'Quintessential', cursive;
+
+color: white;
+
+text-align: center;
+
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+
+
+/* Decorative first letter */
 
 h1::first-letter,
 h2::first-letter,
@@ -255,34 +65,193 @@ h3::first-letter {
 
 font-family: 'Fleur De Leah', cursive;
 
-font-size: 1.6em;
-
-margin-right: 3px;
-
-}
-/* Header base font */
-
-h1,
-h2,
-h3 {
-
-font-family: 'Quintessential', cursive !important;
-color: white;
-text-align: center;
-
-}
-
-
-/* Drop cap first letter */
-
-h1::first-letter,
-h2::first-letter,
-h3::first-letter {
-
-font-family: 'Fleur De Leah', cursive !important;
-
 font-size: 1.7em;
 
 margin-right: 3px;
+
+}
+
+
+
+/* =========================
+   SITE TITLE
+========================= */
+
+h1 {
+
+font-size: 60px;
+
+}
+
+
+
+/* =========================
+   SUB HEADERS
+========================= */
+
+h2 {
+
+font-size: 40px;
+
+}
+
+
+
+h3 {
+
+font-size: 28px;
+
+}
+
+
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+p {
+
+font-size: 18px;
+
+line-height: 1.6;
+
+margin: 15px 0;
+
+}
+
+
+
+/* =========================
+   SERVICE LIST
+========================= */
+
+.services {
+
+list-style: none;
+
+padding: 0;
+
+margin-top: 30px;
+
+font-size: 24px;
+
+}
+
+
+
+.services li {
+
+margin: 12px 0;
+
+}
+
+
+
+/* =========================
+   STANDARD LISTS
+========================= */
+
+ul {
+
+list-style: none;
+
+padding: 0;
+
+}
+
+
+
+ul li {
+
+margin: 10px 0;
+
+font-size: 20px;
+
+}
+
+
+
+/* =========================
+   DIVIDER LINE
+========================= */
+
+.divider {
+
+width: 70%;
+
+height: 6px;
+
+margin: 40px auto;
+
+border-radius: 10px;
+
+background: linear-gradient(
+90deg,
+#7ce3cf,
+#6ed2c0
+);
+
+}
+
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.reader-image {
+
+width: 250px;
+
+max-width: 80%;
+
+border-radius: 50%;
+
+border: 8px solid #7ce3cf;
+
+box-shadow:
+0 0 25px rgba(124, 227, 207, 0.9);
+
+margin: 25px 0;
+
+}
+
+
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media (max-width: 600px) {
+
+h1 {
+
+font-size: 48px;
+
+}
+
+h2 {
+
+font-size: 32px;
+
+}
+
+h3 {
+
+font-size: 24px;
+
+}
+
+p {
+
+font-size: 17px;
+
+}
+
+.services {
+
+font-size: 22px;
+
+}
 
 }
