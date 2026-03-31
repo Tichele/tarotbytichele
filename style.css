@@ -42,15 +42,19 @@ line-height:2;
 
 /* ---------------- DIVIDER IMAGE ---------------- */
 
+/* ---------------- DIVIDER IMAGE ---------------- */
+
 .divider{
 display:block;
 width:100%;
 max-width:600px;
-margin:50px auto;
-height:auto !important;
-background:none !important;
-box-shadow:none !important;
-border:none !important;
+margin:60px auto;
+height:auto;
+background:none;
+box-shadow:none;
+border:none;
+
+object-fit:contain;
 }
 
 /* ---------------- IMAGE ---------------- */
