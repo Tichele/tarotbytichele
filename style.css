@@ -47,6 +47,9 @@ display:block;
 width:100%;
 max-width:600px;
 margin:50px auto;
+height:auto;
+background:none;
+box-shadow:none;
 }
 
 /* ---------------- IMAGE ---------------- */
