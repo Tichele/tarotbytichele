@@ -1,136 +1,102 @@
 /* ---------------- GLOBAL ---------------- */
 
-body{
-margin:0;
-padding:0;
-font-family:'Quintessential', serif;
-background:linear-gradient(180deg,#6b50b6,#7a63c8,#6b50b6);
-color:black;
-text-align:center;
-line-height:1.7;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quintessential', serif;
+  background: linear-gradient(180deg, #6b50b6, #7a63c8, #6b50b6);
+  color: black;
+  text-align: center;
+  line-height: 1.7;
 }
 
-section{
-padding:40px 20px;
-max-width:700px;
-margin:auto;
+section {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
 }
 
 /* ---------------- HEADERS ---------------- */
 
-h1,h2,h3{
-font-family:'Quintessential', serif;
-color:white;
-font-weight:normal;
-margin-bottom:20px;
+h1, h2, h3 {
+  font-family: 'Quintessential', serif;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
-.fancy{
-font-family:'Fleur De Leah', cursive;
-font-size:1.4em;
-margin-right:3px;
+.fancy {
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 1.4em;
+  margin-right: 3px;
 }
 
 /* ---------------- SERVICES ---------------- */
 
-.services{
-font-size:22px;
-line-height:2;
+.services {
+  font-size: 22px;
+  line-height: 2;
 }
 
+/* ---------------- DIVIDER ---------------- */
 
-
-/* ---------------- DIVIDER IMAGE ---------------- */
-
-.divider{
-display:block;
-width:100%;
-max-width:600px;
-margin:60px auto;
-height:auto;
-background:none;
-box-shadow:none;
-border:none;
-
-object-fit:contain;
+.divider {
+  display: block;
+  margin: 40px auto;
+  max-width: 90%;   /* scales nicely on desktop and mobile */
+  height: auto;     /* preserves PNG aspect ratio */
+  box-shadow: 0 0 10px #7be3cf, 0 0 25px #7be3cf; /* subtle glow around flowers */
 }
 
 /* ---------------- IMAGE ---------------- */
 
-.reader-img{
-display:block;
-margin:40px auto 10px auto;
-max-width:420px;
-width:90%;
-height:auto;
+.reader-img {
+  display: block;
+  margin: 40px auto 10px auto;
+  max-width: 420px;
+  width: 90%;
+  height: auto;
 
-box-shadow:
-0 0 25px rgba(123,227,207,.7),
-0 0 60px rgba(123,227,207,.4);
+  box-shadow:
+    0 0 25px rgba(123, 227, 207, 0.7),
+    0 0 60px rgba(123, 227, 207, 0.4);
 }
 
 /* ---------------- READER NAME ---------------- */
 
-.reader-name{
-
-font-size:42px;
-color:white;
-
-margin-top:15px;
-margin-bottom:25px;
-
-/* magical glow */
-
-text-shadow:
-0 0 8px rgba(123,227,207,.9),
-0 0 18px rgba(123,227,207,.6),
-0 0 30px rgba(123,227,207,.4);
-
-}
-
-/* Script capital T */
-
-.reader-name .cap{
-font-family:'Fleur De Leah', cursive;
-font-size:1.2em;
-margin-right:2px;
-}
-
-/* Quintessential remainder */
-
-.reader-name .rest{
-font-family:'Quintessential', serif;
-letter-spacing:1px;
+.reader-name {
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 42px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* ---------------- TEXT ---------------- */
 
-p{
-font-size:18px;
-margin-bottom:15px;
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
-ul{
-list-style:none;
-padding:0;
-font-size:20px;
-line-height:1.8;
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.8;
 }
 
 /* ---------------- MOBILE ---------------- */
 
-@media (max-width:600px){
+@media (max-width: 600px) {
 
-h1{font-size:38px;}
-h2{font-size:32px;}
-p{font-size:17px;}
+  h1 { font-size: 38px; }
+  h2 { font-size: 32px; }
+  p { font-size: 17px; }
 
-.reader-img{
-max-width:320px;
-}
+  .reader-img { max-width: 320px; }
 
-.reader-name{
-font-size:36px;
-}
+  .reader-name { font-size: 36px; }
 
+  .divider { max-width: 95%; } /* slight adjustment for smaller screens */
 }
