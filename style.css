@@ -42,7 +42,7 @@ h1, h2, h3 {
 
 .divider {
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
 
   width: 100%;
   max-width: 900px;
