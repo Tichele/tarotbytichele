@@ -40,14 +40,29 @@ h1, h2, h3 {
 
 /* ---------------- FLOWER DIVIDER ---------------- */
 .divider {
-    width: 100%;
-    height: 30px; /* match this to your image height */
-    margin: 5px auto; /* now this actually controls spacing */
-    background-image: url('file_00000000732471f79a7d52cbc3e1d8ac.png');
+    width: 100%; /* full width */
+    height: 40px; /* default height for desktop */
+    margin: 5px auto; /* tight spacing above and below text */
+    background-image: url('file_00000000732471f79a7d52cbc3e1d8ac.png'); /* your PNG */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    box-shadow: none;
+    background-size: contain; /* keeps flowers fully visible */
+    box-shadow: none; /* removes glow */
+}
+
+/* ---------------- RESPONSIVE ADJUSTMENTS ---------------- */
+@media (max-width: 768px) { /* tablets and smaller screens */
+    .divider {
+        height: 30px; /* smaller height for smaller screens */
+        margin: 4px auto; /* slightly tighter spacing */
+    }
+}
+
+@media (max-width: 480px) { /* mobile phones */
+    .divider {
+        height: 25px; /* even smaller height */
+        margin: 3px auto; /* tight spacing on phones */
+    }
 }
 
 /* ---------------- IMAGE ---------------- */
