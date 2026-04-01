@@ -43,9 +43,16 @@ h1, h2, h3 {
 .divider {
   display: block;
   margin: 40px auto;
+
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
+
   height: auto;
+
+  box-shadow: none !important;
+  filter: none !important;
+  background: none !important;
+  border: none !important;
 }
 
 /* ---------------- IMAGE ---------------- */
@@ -58,6 +65,12 @@ h1, h2, h3 {
   height: auto;
 }
 
+.divider img,
+img.divider {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* ---------------- READER NAME ---------------- */
 
 .reader-name {
