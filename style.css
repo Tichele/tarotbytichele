@@ -40,15 +40,14 @@ h1, h2, h3 {
 
 /* ---------------- FLOWER DIVIDER ---------------- */
 .divider {
-    width: 70%; /* Adjust width of divider */
-    height: 6px; /* Divider height */
-    margin: 15px auto; /* Space above & below the divider */
-    border-radius: 10px; /* Rounded edges */
-    background-image: url('file_00000000732471f79a7d52cbc3e1d8ac.png'); /* Your uploaded PNG */
+    width: 100%; /* spans the container */
+    height: 80px; /* match this roughly to your image height */
+    margin: 15px auto; /* spacing above & below the divider */
+    background-image: url('file_00000000732471f79a7d52cbc3e1d8ac.png'); /* your PNG */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* Keeps the flower pattern fully visible */
-    box-shadow: none; /* Removes glow */
+    background-size: contain; /* ensures flowers are fully visible */
+    box-shadow: none; /* removes glow */
 }
 
 /* ---------------- IMAGE ---------------- */
