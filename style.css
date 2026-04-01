@@ -42,7 +42,7 @@ h1, h2, h3 {
 .divider {
     width: 100%; /* spans the container */
     height: 80px; /* match this roughly to your image height */
-    margin: 15px auto; /* spacing above & below the divider */
+    margin: 5px auto; /* spacing above & below the divider */
     background-image: url('file_00000000732471f79a7d52cbc3e1d8ac.png'); /* your PNG */
     background-repeat: no-repeat;
     background-position: center;
